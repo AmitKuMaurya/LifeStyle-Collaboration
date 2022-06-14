@@ -1,0 +1,266 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* for navbar ...........................................................................................................................*/
+#payment-navbar{
+        display: flex;
+        justify-content: space-between;
+        padding: 1%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+#payment-contacts{
+    margin-top: 1%;
+    margin-right: 6px;
+
+}
+.text-nav{
+    color:#72818D ;
+    font-size: 12px;
+}
+#payment-logo{
+    width: 109px;
+    height: 34px;
+    margin-left: 10px;
+
+}
+
+/* for payment-data css part */
+
+#payment-data{
+    display: flex;
+    margin-top: 2%;
+}
+#payment-user-info{
+    width: 70%;
+    /* border: 1px solid red; */
+    height: 400px;
+}
+#payment-cart-info{
+    width: 35%;
+    /* border: 1px solid green; */
+    height: 400px;
+}
+
+/* delivery-options div css .............................................................................................*/
+
+#delivery-options{
+    margin: auto;
+    display: flex;
+    gap: 4%;
+    padding: 2%;
+    /* border: 1px solid yellowgreen; */
+}
+#home-delivery,#store-delivery{
+    width: 40%;
+    padding: 3%;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid grey;
+    cursor: pointer;
+    
+}
+#delivery-address{
+    width: 100%;
+    padding: 3%;
+    text-align: justify;
+    font-size: 14px;
+
+}
+
+/*  All Payment Part CSS  .......................................................................................*/
+#payment-datails{
+    margin-top: 2%;
+}
+.pay-options,#term-cond{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 2.5%;
+}
+.pay-logo{
+    width: 10%;
+    margin-left: 2%;
+    margin-top: 1%;
+}
+.pay-info{
+    width: 80%;
+}
+.pay-logo>img{
+    width: 50%;
+}
+.promo-card{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 2%;
+    text-align: justify;
+}
+.promo-card>img{
+    margin-left: 6%;
+    width: 5%;
+    margin-right: 5%;
+}
+.promo-card>a{
+    text-decoration: none;
+    color: rgb(219, 143, 3);
+}
+#pay-now{
+    display: flex;
+    padding: 5%;
+}
+#pay-now>div{
+    width: 50%;
+}
+#pay-now>p{
+    font-size: 12px;
+}
+p>a{
+color: #72818D;
+}
+
+#pay-btn>button{
+    width: 80%;
+    background-color: #FAA619;
+    padding: 5%;
+    border: 0px;
+    color: #FFFFFF;
+    margin-left: 10%;
+    border-radius: 10px;
+    
+}
+#pay-btn>button:hover{
+    background-color: #f6be5f;
+    cursor: pointer;
+}
+.secure-logo>img{
+    width: 100px;
+}
+.secure-logo>p{
+    color: #72818D;
+    margin-bottom: 10px;
+}
+.secure-logo>h5{
+    margin-bottom: 10px;
+}
+#term-cond{
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 2%;
+}
+#term-cond>.secure-logo{
+    margin-right: 3%;
+}
+
+
+
+/* for check box  ..........................................................................................*/
+/* Customize the label (the container) */
+.check-box {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top:2%;
+  }
+  
+  /* Hide the browser's default radio button */
+  .check-box input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color:white;
+    border-radius: 50%;
+    border: 1px solid grey;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .check-box:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .check-box input:checked ~ .checkmark {
+    background-color:white;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .check-box input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .check-box .checkmark:before {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: orange;
+  }
+
+  /* First Card deatils ....................................................................................................*/
+  #card-details{
+    display: none;
+    /* border: 1px solid red; */
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 5%;
+
+  }
+  #card-1{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+
+  }
+  .card-1-1{
+    display: flex;
+  }
+  #card-details>input{
+    width: 100%;
+    /* height: 40px; */
+    border:1px solid #bdc6ce;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    padding: 3.5%;
+    
+  }
+  #card-details>h3{
+    color: #4b4e51;
+    font-size: 16px;
+  }
+  .bill-address{
+    display: flex;
+    gap: 3%;
+    margin-top: 3%;
+  }
+  #bill-address-check>h3{
+    margin-top: 3%;
+  }
+
+
+  /* EMI css......................................................................................*/
+  
