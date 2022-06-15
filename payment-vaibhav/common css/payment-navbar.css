@@ -87,6 +87,10 @@
 .pay-info{
     width: 80%;
 }
+.pay-info>p{
+  margin-top: 1%;
+  color: gray;
+}
 .pay-logo>img{
     width: 50%;
 }
@@ -336,9 +340,43 @@ color: #72818D;
     margin-left: 5%;
   }
 
-
-
-  /*...................................................................................*/
+  /*...............UPI...CSS.................................................................*/
+  #Upi-Opt{
+    display: none;
+  }
+  
+  #upi-opt{
+    width: 60%;
+    /* border: 1px solid red; */
+    margin-left: 2%;
+    display: grid;
+    
+    grid-template-columns: repeat(2,1fr);
+    gap: 5%;
+    padding: 5%;
+    box-shadow: rgba(36, 35, 35, 0.05) 0px 0px 0px 1px;
+  }
+  #upi-opt-1{
+    display: flex;
+    justify-content: space-evenly;
+    /* width: 50%; */
+  }
+  .upi-opt-all{
+    display: flex;
+    border: 1px solid rgb(187, 180, 180); 
+    padding: 3%;
+  }
+  .lable_1{
+    font-weight: bold;
+  }
+  #upi-opt-id-1>input{
+    width: 100%;
+    height: 40px;
+  }
+  #upi-opt-id-2>select{
+    width: 100%;
+    height: 40px;
+  }
 
   /*...................................................................................*/
 

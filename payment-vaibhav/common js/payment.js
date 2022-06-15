@@ -90,6 +90,16 @@ function WalletInput(){
 
 // 5. UPI..................................................../......................
 
-
+let UPI_pay=document.getElementById("upi").addEventListener("click",upi_Pay)
+function upi_Pay(){
+    let card_details=document.querySelector("#Upi-Opt")
+    if(card_details.style.display==="none")
+    {
+        card_details.style.display="block";
+    }
+    else{
+        card_details.style.display="none"
+    }
+}
 
 
