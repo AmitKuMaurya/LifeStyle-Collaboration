@@ -1,22 +1,24 @@
 
 
-//  1...........
+//  1...........................................................................................//
 
 let homeDelivery =document.getElementById("home-delivery").addEventListener("click",HomeDelivery)
+let HideDiv=document.getElementById("delivery-info").style.display="block"
 
 function HomeDelivery(){
-    console.log("hello")
+    let HideDiv=document.getElementById("delivery-info").style.display="block"
 }
 
-// 2...............
+// 2.................................................................................................//
 
 let storeDelivery= document.getElementById("store-delivery").addEventListener("click",StoreDelivery)
 
 function StoreDelivery(){
-    console.log("hi")
+   let HideDiv=document.getElementById("delivery-info").style.display="none"
+
 }
 
-//  3....Debit And Credit Card Div...............
+//  3....Debit And Credit Card Div.....................................................................//
 
 let debitCard=document.getElementById("debit-card").addEventListener("click",DebitCard)
 function DebitCard(){
@@ -45,7 +47,7 @@ function Emi(){
 }
 
 
-//  4.......Net Banking-div.....................
+//  4.......Net Banking-div......................................................................//
 
 let netBank=document.getElementById("net-bank").addEventListener("click",NetBank)
 function NetBank(){
@@ -59,7 +61,7 @@ function NetBank(){
     }
 }
 
-//  4.......Wallet-div.....................
+//  4.......Wallet-div..............................................................................//
 
 let Wallet =document.getElementById("wallets").addEventListener("click",WalletInput)
 

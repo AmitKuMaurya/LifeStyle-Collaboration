@@ -30,18 +30,49 @@
 /* for payment-data css part */
 
 #payment-data{
-    display: flex;
+    /* display: flex; */
     margin-top: 2%;
 }
 #payment-user-info{
     width: 70%;
-    /* border: 1px solid red; */
-    height: 400px;
+    
 }
+#delivery-info{
+  width: 60%;
+  padding: 5%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+#delivery-info>h1{
+  color: #242428;
+  margin-bottom: 5%;
+}
+.p-tag{
+  color: #242428;
+  margin-bottom: 3%;
+}
+
 #payment-cart-info{
     width: 35%;
     /* border: 1px solid green; */
     height: 400px;
+}
+.input-tag{
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 3%;
+}
+#home-office{
+  display: flex;
+  justify-content: space-around;
+  margin-left: -20%;
+  margin-top: 1%;
+}
+.optional-tag{
+  display: flex;
+  gap: 2%;
+}
+.opt-tag{
+  color: rgb(165, 163, 163);
 }
 
 /* delivery-options div css .............................................................................................*/
