@@ -263,4 +263,90 @@ color: #72818D;
 
 
   /* EMI css......................................................................................*/
-  
+  #emi-card-1{
+    display: none;
+    width: 50%;
+    padding: 5%;
+  }
+  #emi-card-1>input{
+    width: 100%;
+    /* height: 40px; */
+    border:1px solid #bdc6ce;
+    /* margin-top: 2%; */
+    margin-bottom: 4%;
+    padding: 3.5%;
+  }
+  #emi-card-1>h3{
+    margin-bottom: 3%;
+  }
+
+  /*...................Net Banking......................................................*/
+
+  #net-banking-div{
+    display: none;
+    width: 50%;
+  }
+  #net-banking-div>input{
+    width: 90%;
+    padding: 3.5%;
+    /* margin-left: -20%; */
+  }
+
+  /*.............Wallet CSS......................................................................*/
+  #wallet-div{
+    display: none;
+    width: 50%;
+    /* border: 1px solid red; */
+  }
+  #wallet-div-info{
+    display: none;
+    background-color: rgba(255, 255, 255, 0.447);
+    position: absolute;
+    box-shadow: rgba(36, 35, 35, 0.05) 0px 0px 0px 1px;
+    cursor: pointer;
+    padding:2% ;
+  }
+  .wallet-div-all:hover{
+    background-color:rgba(224, 217, 217, 0.642);
+  }
+
+  #wallet-div>input{
+    width: 90%;
+    padding: 3.5%;
+  }
+
+  .wallet-div-all{
+    display: flex;
+    /* border: 1px solid gold; */
+    gap: 5%;
+    padding: 2%;
+    /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; */
+  }
+  .wallet-img{
+    margin-left: 2%;
+    width: 15%;
+    /* border: 1px solid green; */
+  }
+  .wallet-name{
+    width: 70%;
+    margin-left: 5%;
+  }
+  .wallet-img>img{
+    width: 100%;
+    margin-left: 5%;
+  }
+
+
+
+  /*...................................................................................*/
+
+  /*...................................................................................*/
+
+  /*...................................................................................*/
+
+  /*...................................................................................*/
+
+  /*...................................................................................*/
+
+  /*...................................................................................*/
+
