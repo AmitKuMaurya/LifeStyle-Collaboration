@@ -1,0 +1,119 @@
+#top-bar{
+    height: 40px;
+    background-color: black;
+}
+#top-bar>div{
+    margin: auto;
+    width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.top_div{
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    margin-bottom: 20%;
+    align-items: center;
+    gap: 15px;
+}
+.top_div>p{
+    margin-top: 010px;
+    font-family: ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+   
+}
+#navbar{
+    height: 65px;
+    background-color: whitesmoke;
+}
+#navbar>div{
+    width: 82%;
+    display: flex;
+}
+#types{
+    height: 45px;
+    
+}
+#offfer{
+    height: 40px;
+    background-color: orange;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 16px;
+    font-weight: bold;
+}   
+
+
+/* footer Starts from below*/
+
+footer{
+    margin: 1px solid gray;
+    background-color: rgb(242, 235, 235);
+}
+#top-foot{
+    width: 82%;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.box1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.box1>div>a>img{
+    width: 130px;
+    height: 50px;
+}
+.box1>div>input{
+    height: 50px;
+    width: 330px;
+}
+.box1>div>button{
+    height: 50px;
+    width: 150px;
+    background-color: black;
+    color: white;
+   
+}
+#bottomdiv{
+    width: 82%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,0.5fr);
+   
+}
+/* #bottomdiv:nth-child(1){
+    display: grid;
+    grid-area: d1;
+} */
+#bottomdiv>div{
+    margin-left: 0px;
+    font-size: 12px;
+    font-family: ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+#bottomdiv>div>p{
+    color: gray;
+    
+}
+
+.last-div{
+    width: 82%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.last-div>div{
+    font-size: 22px;
+}
