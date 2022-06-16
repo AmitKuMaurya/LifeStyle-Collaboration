@@ -1,13 +1,18 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-family: ProximaNova-Regular,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 }
 
 /* for navbar ...........................................................................................................................*/
 #payment-navbar{
         display: flex;
         justify-content: space-between;
+        position: fixed;
+        top: 0;
+        width: 99%;
         padding: 1%;
+        background-color: white;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 }
@@ -28,14 +33,49 @@
 }
 
 /* for payment-data css part */
+#all-data{
+  display: flex;
+}
+#main-div-payment{
+  display: flex;
+  margin-top: 10%;
+  justify-content: space-evenly;
+  width: 100%;
+  /* height: 200px;
+  border: 1px solid green; */
+}
+#main1-div{
+  width: 100%;
+}
+#payment-datails{
+  display: flex;
+}
+#payment-basket-info>div{
+  display: block;
+  justify-content: space-evenly;
+}
+#order-summary{
+
+}
+#img-pay-opt{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10%;
+}
+#img-pay-opt>img{
+  width: 40px;
+}
+#main1-div{
+  width: 100%;
+}
 
 #payment-data{
-    /* display: flex; */
-    margin-top: 2%;
+    display: flex;
+    /* margin-top: 10%; */
 }
 #payment-user-info{
-    width: 70%;
-    
+    width: 60%;
+    /* border: 1px solid green; */
 }
 #delivery-info{
   width: 60%;
@@ -100,6 +140,9 @@
     font-size: 14px;
 
 }
+#location-info{
+  width: 100%;
+}
 
 /*  All Payment Part CSS  .......................................................................................*/
 #payment-datails{
@@ -143,12 +186,15 @@
     display: flex;
     padding: 5%;
 }
+#pay-opt{
+  width: 50%;
+}
 #pay-now>div{
     width: 50%;
 }
-#pay-now>p{
+/* #pay-now>p{
     font-size: 12px;
-}
+} */
 p>a{
 color: #72818D;
 }
@@ -409,9 +455,58 @@ color: #72818D;
     height: 40px;
   }
 
-  /*...................................................................................*/
+  /*.......................iframe.CSS...........................................................*/
+  #location-info{
+    display: none;
+  }
+  .gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px};
+        .mapouter{
+            width: 50%;
+            height: 200px;
+        }
+        #main{
+            margin: auto;
+            margin-top: 5%;
+            display: flex;
+            justify-content: center;
+        }
+  /*...........Oder summary CSS........................................................................*/
+  #payment-basket-info{
+    /* position: fixed;
+    top: 10%;
+    width: 100%; */
+    height: auto;
+    margin-left: 2%;
+    width: 32%;
+    padding: 2%;
+  }
+ 
+.summary-cost-class{
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+  }
+  #shipping-cost>div>p+p{
+    font-size: 14px;
+    color: green;
+    margin-top: 4%;
+  }
+  #product-basket{
+    box-shadow: rgba(36, 35, 35, 0.05) 0px 0px 0px 1px;
+    padding: 5%;
+  }
+  #img-pay-opt{
+    margin-top: 6%;
+  }
+  #pay-note>p{
+    color: grey;
+    font-size: 14px;
+  }
+  #pay-options{
+    margin-top: 5%;
+  }
 
-  /*...................................................................................*/
+
 
   /*...................................................................................*/
 

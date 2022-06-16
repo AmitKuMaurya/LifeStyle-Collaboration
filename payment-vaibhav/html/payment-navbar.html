@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../common css/payment-navbar.css">
 </head>
 <body>
+    
     <div id="payment-navbar">
         <div id="payment-logo">
             <img src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg" alt="logo">
@@ -17,278 +18,332 @@
             <div> <p class="text-nav">Monday-Saturday, 09:00AM-07:00PM</p></div>
         </div>
     </div>
-    <div id="payment-data">
-        <div id="payment-user-info">
-            <h1>Select a Shipping method</h1>
-            <div><div id="delivery-options">
-                <div id="home-delivery">
-                    <h3>Home Delivery</h3>
-                    <p>Get your product delivered to your home</p>   
-                </div>
-                <div id="store-delivery">
-                    <h3>Click & Collect</h3>
-                    <p>Collect your order from a store of your choice</p>
-                </div>
-            </div></div>
-            <div id="delivery-info">
-                <h1>Add your shipping address</h1>
-                <p class="p-tag">Full Name</p>
-                <input class="input-tag" type="text" placeholder="Enter your full name">
-                <p class="p-tag">Mobile Number</p>
-                <input class="input-tag" type="text" placeholder="Enter your mobile number">
-                <p class="p-tag">Pincode</p>
-                <input class="input-tag" type="text" placeholder="Enter your Pincode">
-                <p class="p-tag">City</p>
-                <input class="input-tag" type="text" placeholder="Enter your City or Town">
-                <p class="p-tag">State</p>
-                <input class="input-tag" type="text" placeholder="Enter your state">
-                <p class="p-tag">Building name or number</p>
-                <input class="input-tag" type="text" placeholder="Enter Building Name">
-                <p class="p-tag">Street name or number</p>
-                <input class="input-tag" type="text" placeholder="Flat/House number, floor,Building">
-                <div class="optional-tag"> <p class="p-tag">Landmark</p><p class="opt-tag">(optional)</p></div>
-                <input class="input-tag" type="text" placeholder="Enter your full name">
-                <div class="optional-tag"><p class="p-tag">Address Type</p><p class="opt-tag">(optional)</p></div>
-                <div id="home-office">
-                    <div><label class="check-box">
-                        <input type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                      Home</label></div>
-                    <div><label class="check-box">
-                        <input type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
-                      Office</label></div></div>
-                </div>
-            </div>
-            <div id="payment-datails">
-                <h1>Select a payment method</h1>
-                <div id="pay-opt">
-                    <div id="debit-card">
-                    <div class="pay-options">
-                        <label class="check-box">
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                          </label>
-                        <div class="pay-logo"><img src="https://i1.lmsin.net/website_images/ae/checkout/card-payment.svg" alt="card-logo"></div>
-                        <div class="pay-info"><h3>Credit/Debit card</h3><p>User your Credit or Debit Card</p></div>
+
+    <div id="main-div-payment">
+        <div id="main1-div">
+            <div id="payment-data">
+            <div id="payment-user-info">
+                <h1>Select a Shipping method</h1>
+                <div id="div-delivery-opt">
+                    <div id="delivery-options">
+                    <div id="home-delivery">
+                        <h3>Home Delivery</h3>
+                        <p>Get your product delivered to your home</p>   
                     </div>
-                    <div id="card-details">
-                            <div id="card-1">
-                                <div class="card-1-1"><label class="check-box">
-                                    <input type="checkbox" checked="checked">
-                                    <span class="checkmark"></span>
-                                  </label>Credit Card</div>
-                                <div class="card-1-1"><label class="check-box">
-                                    <input type="checkbox" checked="checked">
-                                    <span class="checkmark"></span>
-                                  </label>Debit Card</div>
-                            </div>
-                            <h3>Card Number</h3>
-                            <input type="text" placeholder="Enter your 16 digit card number">
-                            <h3>Name on Card</h3>
-                            <input type="text" placeholder="Name on card">
-                            <h3>Expiry Date</h3>
-                            <input type="text" placeholder="Enter your 16 digit card number">
-                            <div id="bill-address-check">
-                                <div class="bill-address"><input type="checkbox"><p>Save this card for future transaactions</p></div>
-                                <h3>Billing Address</h3>
-                                <div class="bill-address"><input type="checkbox"><h3>Is billing address the same as shipping address?</h3></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="emi">
-                    <div class="pay-options">
-                        
-                        <label class="check-box">
+                    <div id="store-delivery">
+                        <h3>Click & Collect</h3>
+                        <p>Collect your order from a store of your choice</p>
+                    </div>
+                    </div>
+               </div>
+                <div id="delivery-info">
+                    <h1>Add your shipping address</h1>
+                    <p class="p-tag">Full Name</p>
+                    <input class="input-tag" type="text" placeholder="Enter your full name">
+                    <p class="p-tag">Mobile Number</p>
+                    <input class="input-tag" type="text" placeholder="Enter your mobile number">
+                    <p class="p-tag">Pincode</p>
+                    <input class="input-tag" type="text" placeholder="Enter your Pincode">
+                    <p class="p-tag">City</p>
+                    <input class="input-tag" type="text" placeholder="Enter your City or Town">
+                    <p class="p-tag">State</p>
+                    <input class="input-tag" type="text" placeholder="Enter your state">
+                    <p class="p-tag">Building name or number</p>
+                    <input class="input-tag" type="text" placeholder="Enter Building Name">
+                    <p class="p-tag">Street name or number</p>
+                    <input class="input-tag" type="text" placeholder="Flat/House number, floor,Building">
+                    <div class="optional-tag"> <p class="p-tag">Landmark</p><p class="opt-tag">(optional)</p></div>
+                    <input class="input-tag" type="text" placeholder="Enter your full name">
+                    <div class="optional-tag"><p class="p-tag">Address Type</p><p class="opt-tag">(optional)</p></div>
+                    <div id="home-office">
+                        <div><label class="check-box">
                             <input type="checkbox" checked="checked">
                             <span class="checkmark"></span>
-                          </label>
-                        <div class="pay-logo"><img src="https://i1.lmsin.net/website_images/in/checkout/logo-emi.png" alt="emi-logo"></div>
-                        <div class="pay-info"><h3>EMI</h3><p>Available on orders above $ 3,000</p></div>
+                          Home</label></div>
+                        <div><label class="check-box">
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                          Office</label></div></div>
+                </div>
+                <div id="location-info">
+                    <input id="city_search" type="text" placeholder="Enter city">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe 
+                            width="600" 
+                            height="500" 
+                            id="gmap_canvas" 
+                            frameborder="0" 
+                            scrolling="no" 
+                            marginheight="0" 
+                            marginwidth="0">
+                         </iframe>
+                         </div></div>
+                     </div>
+                </div>
+                 <div id="payment-basket-info">
+                    
+                        <div id="product-basket">
+                            <h2>Your Order summary</h2>
+                            <div id="append-basket"></div>
+                            <div class="summary-cost-class" id="subtotal">
+                                <div>Subtotal:</div>
+                                <div>$2497</div>
+                            </div>
+                            <div class="summary-cost-class" id="shipping-cost">
+                                <div><p>Standard Group Shipping:</p><p>(2-4 business days)</p></div>
+                                <div>Free</div> 
+                            </div>
+                            <div class="summary-cost-class" id="total-cost">
+                                <div>Subtotal:</div>
+                                <div>$2497</div>
+                            </div>
+                            <div class="summary-cost-class" id="pay-note">
+                                <p>Shipping charges might vary based on delivery location</p>
+                            </div>
                         </div>
-                        <div id="emi-card-1">
-                            <h3>Choose your bank</h3>
-                            <input type="text" placeholder="Bank name">
-                            <h3>Select your EMI duration</h3>
-                            <input type="text" placeholder="Choose an EMI plan">
-                            <h3>Card Number</h3>
-                            <input type="text" placeholder="Enter your 16 digit card number">
-                            <h3>Name on Card</h3>
-                            <input type="text" placeholder="Name on card">
-                            <h3>Expiry Date</h3>
-                            <input type="text" placeholder="Enter your 16 digit card number">
-                            <div id="bill-address-check">
-                                <div class="bill-address"><input type="checkbox"><p>Save this card for future transaactions</p></div>
-                                <h3>Billing Address</h3>
-                                <div class="bill-address"><input type="checkbox"><h3>Is billing address the same as shipping address?</h3></div>
+                        <div id="pay-options">
+                            <p>Ways you can pay</p>
+                            <div id="img-pay-opt">
+                            <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-visa.png" alt="">
+                            <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-mc.png" alt="">
+                            <img src="https://i1.lmsin.net/website_images/in/checkout/logo-rupay.svg" alt="">
+                            <img src="https://i1.lmsin.net/website_images/ae/checkout/logo-cash.png" alt="">
+                            <img src="https://i1.lmsin.net/website_images/in/checkout/logo-netbanking.svg" alt="">
+                            <img src="https://i1.lmsin.net/website_images/in/checkout/logo-wallet.svg" alt="">
+                            <img src="https://i1.lmsin.net/website_images/in/checkout/logo-rewards.svg" alt="">
+                
+                            </div>
+                        </div>
+                    
+                </div>
+                </div>
+                <h1>Select a payment method</h1>
+                <div id="payment-datails">
+                    <div id="pay-opt">
+                        <div id="debit-card" class="pay1">
+                        <div class="pay-options">
+                            <label class="check-box">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                              </label>
+                            <div class="pay-logo"><img src="https://i1.lmsin.net/website_images/ae/checkout/card-payment.svg" alt="card-logo"></div>
+                            <div class="pay-info"><h3>Credit/Debit card</h3><p>User your Credit or Debit Card</p></div>
+                        </div>
+                        <div id="card-details">
+                                <div id="card-1">
+                                    <div class="card-1-1"><label class="check-box">
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                      </label>Credit Card</div>
+                                    <div class="card-1-1"><label class="check-box">
+                                        <input type="checkbox" checked="checked">
+                                        <span class="checkmark"></span>
+                                      </label>Debit Card</div>
                                 </div>
+                                <h3>Card Number</h3>
+                                <input type="text" placeholder="Enter your 16 digit card number">
+                                <h3>Name on Card</h3>
+                                <input type="text" placeholder="Name on card">
+                                <h3>Expiry Date</h3>
+                                <input type="text" placeholder="Enter your 16 digit card number">
+                                <div id="bill-address-check">
+                                    <div class="bill-address"><input type="checkbox"><p>Save this card for future transaactions</p></div>
+                                    <h3>Billing Address</h3>
+                                    <div class="bill-address"><input type="checkbox"><h3>Is billing address the same as shipping address?</h3></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div id="emi" class="pay2">
+                        <div class="pay-options">
+                            
+                            <label class="check-box">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                              </label>
+                            <div class="pay-logo"><img src="https://i1.lmsin.net/website_images/in/checkout/logo-emi.png" alt="emi-logo"></div>
+                            <div class="pay-info"><h3>EMI</h3><p>Available on orders above $ 3,000</p></div>
+                            </div>
+                            <div id="emi-card-1">
+                                <h3>Choose your bank</h3>
+                                <input type="text" placeholder="Bank name">
+                                <h3>Select your EMI duration</h3>
+                                <input type="text" placeholder="Choose an EMI plan">
+                                <h3>Card Number</h3>
+                                <input type="text" placeholder="Enter your 16 digit card number">
+                                <h3>Name on Card</h3>
+                                <input type="text" placeholder="Name on card">
+                                <h3>Expiry Date</h3>
+                                <input type="text" placeholder="Enter your 16 digit card number">
+                                <div id="bill-address-check">
+                                    <div class="bill-address"><input type="checkbox"><p>Save this card for future transaactions</p></div>
+                                    <h3>Billing Address</h3>
+                                    <div class="bill-address"><input type="checkbox"><h3>Is billing address the same as shipping address?</h3></div>
+                                    </div>
+                                
+                            </div>
+                        </div>          
+                        <div class="pay-options pay3" id="paypal">
+                            <label class="check-box">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                              </label>
+                            <div class="pay-logo"><img src="https://i1.lmsin.net/website_images/ae/checkout/logo-paypal.png" alt="paypal-logo"></div>
+                            <div class="pay-info"><h3>PayPal</h3><p>Pay now with your PayPal account</p></div>
+                        </div>
+                        <div class="pay-options pay4" id="cod">
+                            <label class="check-box">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                              </label>
+                            <div class="pay-logo"><img src="https://dd311b21463486cea6e6-ba57f67b7c05f7cbe632f35f74bd7340.ssl.cf3.rackcdn.com/Checkout/order_summary.png" alt="cod-logo"></div>
+                            <div class="pay-info"><h3>Cash On Delivery</h3><p>+ $ 49</p></div>
                             
                         </div>
-                    </div>
-                    
-                    <div class="pay-options" id="paypal">
-                        <label class="check-box">
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                          </label>
-                        <div class="pay-logo"><img src="https://i1.lmsin.net/website_images/ae/checkout/logo-paypal.png" alt="paypal-logo"></div>
-                        <div class="pay-info"><h3>PayPal</h3><p>Pay now with your PayPal account</p></div>
-                    </div>
-                    <div class="pay-options" id="cod">
-                        <label class="check-box">
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                          </label>
-                        <div class="pay-logo"><img src="https://dd311b21463486cea6e6-ba57f67b7c05f7cbe632f35f74bd7340.ssl.cf3.rackcdn.com/Checkout/order_summary.png" alt="cod-logo"></div>
-                        <div class="pay-info"><h3>Cash On Delivery</h3><p>+ $ 49</p></div>
-                        
-                    </div>
-                    <div class="pay-options" id="net-bank">
-                        <label class="check-box">
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                          </label>
-                        <div class="pay-logo"><img src="https://i1.lmsin.net/website_images/in/my-account/ico-payment-netbanking.png" alt="net-banking"></div>
-                        <div class="pay-info"><h3>Net Banking</h3><p>Pay by your preferred bank account</p></div>
-                        <div id="net-banking-div"><input type="text" placeholder="Net Banking"></div>
-                    </div>
-                    <div class="pay-options" id="wallets">
-                        <label class="check-box">
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                          </label>
-                        <div class="pay-logo"><img src="https://i1.lmsin.net/website_images/in/my-account/ico-payment-wallet.png" alt="wallwt logo"></div>
-                        <div class="pay-info"><h3>Wallets</h3><p>Pay by your preferred wallet.</p></div>
-                        <div id="wallet-div"><input type="text" placeholder="Select a wallet">
-                        <div id="wallet-div-info">
-                            <div class="wallet-div-all">
-                            <div class="wallet-img"><img src="https://i1.lmsin.net/website_images/in/payment/wallets/desktop/amzpay@2x.png" alt=""></div>
-                            <div>Amazon Pay</div>
-                            </div>
-                            <div class="wallet-div-all">
-                            <div class="wallet-img"><img src="https://i1.lmsin.net/website_images/in/payment/wallets/desktop/frec@2x.png" alt=""></div>
-                            <div class="wallet-name">Freecharge PayLater | UPI |</div>
-                            </div>
-                            <div class="wallet-div-all">
-                            <div class="wallet-img"><img src="https://i1.lmsin.net/website_images/in/payment/wallets/desktop/payz@2x.png" alt=""></div>
-                            <div class="wallet-name">HDFC Bank-PayZapp</div>
-                            </div>
-                            <div class="wallet-div-all">
-                            <div class="wallet-img"><img src="https://i1.lmsin.net/website_images/in/payment/wallets/desktop/olam@2x.png" alt=""></div>
-                            <div class="wallet-name">OlaMoney(Postpaid+Wallet)</div>
-                            </div>
-                            <div class="wallet-div-all">
-                            <div class="wallet-img"><img src="https://i1.lmsin.net/website_images/in/payment/wallets/desktop/paytm@2x.png" alt=""></div>
-                            <div class="wallet-name" >Paytm</div>
-                            </div>
-                            <div class="wallet-div-all">
-                            <div class="wallet-img"><img src="https://i1.lmsin.net/website_images/in/payment/wallets/desktop/phonepe@2x.png" alt=""></div>
-                            <div class="wallet-name">PhonePe/BHIM UPI</div>
-                            </div>
-                            <div class="wallet-div-all">
-                            <div class="wallet-img"><img src="https://i1.lmsin.net/website_images/in/payment/wallets/desktop/yesw@2x.png" alt=""></div>
-                            <div class="wallet-name">YES PAY Wallet</div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                    <div id="upi" >
-                    <div class="pay-options">
-                        <label class="check-box">
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                          </label>
-                        <div class="pay-logo"><img src="https://i1.lmsin.net/website_images/payment/upi.png" alt="UPI logo"></div>
-                        <div class="pay-info"><h3>UPI</h3><p>Pay by your preferred UPI Id.</p></div>
-                    </div>
-                    <div id="Upi-Opt">
-                    <div id="upi-opt">
-                    <div class="upi-opt-all">     
-                        <div class="upi-opt-1">
+                        <div class="pay-options pay5" id="net-bank">
                             <label class="check-box">
                                 <input type="checkbox" checked="checked">
                                 <span class="checkmark"></span>
                               </label>
+                            <div class="pay-logo"><img src="https://i1.lmsin.net/website_images/in/my-account/ico-payment-netbanking.png" alt="net-banking"></div>
+                            <div class="pay-info"><h3>Net Banking</h3><p>Pay by your preferred bank account</p></div>
+                            <div id="net-banking-div"><input type="text" placeholder="Net Banking"></div>
                         </div>
-                        <div class="upi-opt-1"><img src="https://i1.lmsin.net/website_images/in/my-account/gpay.png" alt=""><label class="lable_1">Tez</label></div>
-                    </div>
-                    <div class="upi-opt-all">     
-                        <div class="upi-opt-1">
+                        <div class="pay-options pay6" id="wallets">
                             <label class="check-box">
                                 <input type="checkbox" checked="checked">
                                 <span class="checkmark"></span>
                               </label>
+                            <div class="pay-logo"><img src="https://i1.lmsin.net/website_images/in/my-account/ico-payment-wallet.png" alt="wallwt logo"></div>
+                            <div class="pay-info"><h3>Wallets</h3><p>Pay by your preferred wallet.</p></div>
+                            <div id="wallet-div"><input type="text" placeholder="Select a wallet">
+                            <div id="wallet-div-info">
+                                <div class="wallet-div-all">
+                                <div class="wallet-img"><img src="https://i1.lmsin.net/website_images/in/payment/wallets/desktop/amzpay@2x.png" alt=""></div>
+                                <div>Amazon Pay</div>
+                                </div>
+                                <div class="wallet-div-all">
+                                <div class="wallet-img"><img src="https://i1.lmsin.net/website_images/in/payment/wallets/desktop/frec@2x.png" alt=""></div>
+                                <div class="wallet-name">Freecharge PayLater | UPI |</div>
+                                </div>
+                                <div class="wallet-div-all">
+                                <div class="wallet-img"><img src="https://i1.lmsin.net/website_images/in/payment/wallets/desktop/payz@2x.png" alt=""></div>
+                                <div class="wallet-name">HDFC Bank-PayZapp</div>
+                                </div>
+                                <div class="wallet-div-all">
+                                <div class="wallet-img"><img src="https://i1.lmsin.net/website_images/in/payment/wallets/desktop/olam@2x.png" alt=""></div>
+                                <div class="wallet-name">OlaMoney(Postpaid+Wallet)</div>
+                                </div>
+                                <div class="wallet-div-all">
+                                <div class="wallet-img"><img src="https://i1.lmsin.net/website_images/in/payment/wallets/desktop/paytm@2x.png" alt=""></div>
+                                <div class="wallet-name" >Paytm</div>
+                                </div>
+                                <div class="wallet-div-all">
+                                <div class="wallet-img"><img src="https://i1.lmsin.net/website_images/in/payment/wallets/desktop/phonepe@2x.png" alt=""></div>
+                                <div class="wallet-name">PhonePe/BHIM UPI</div>
+                                </div>
+                                <div class="wallet-div-all">
+                                <div class="wallet-img"><img src="https://i1.lmsin.net/website_images/in/payment/wallets/desktop/yesw@2x.png" alt=""></div>
+                                <div class="wallet-name">YES PAY Wallet</div>
+                                </div>
+                            </div>
+                            </div>
                         </div>
-                        <div class="upi-opt-1"><img src="https://i1.lmsin.net/website_images/in/my-account/phonepe.png" alt=""></div>
+                        <div id="upi" class="pay7" >
+                        <div class="pay-options">
+                            <label class="check-box">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                              </label>
+                            <div class="pay-logo"><img src="https://i1.lmsin.net/website_images/payment/upi.png" alt="UPI logo"></div>
+                            <div class="pay-info"><h3>UPI</h3><p>Pay by your preferred UPI Id.</p></div>
+                        </div>
+                        <div id="Upi-Opt">
+                        <div id="upi-opt">
+                        <div class="upi-opt-all">     
+                            <div class="upi-opt-1">
+                                <label class="check-box">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                  </label>
+                            </div>
+                            <div class="upi-opt-1"><img src="https://i1.lmsin.net/website_images/in/my-account/gpay.png" alt=""><label class="lable_1">Tez</label></div>
+                        </div>
+                        <div class="upi-opt-all">     
+                            <div class="upi-opt-1">
+                                <label class="check-box">
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                  </label>
+                            </div>
+                            <div class="upi-opt-1"><img src="https://i1.lmsin.net/website_images/in/my-account/phonepe.png" alt=""></div>
+                        </div>
+                        <div class="upi-opt-all">     
+                            <label class="check-box">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                              </label>
+                            
+                            <div class="upi-opt-1"><img src="https://i1.lmsin.net/website_images/in/my-account/paytm.png" alt=""> </div>
+                        </div>
+                        <div class="upi-opt-all">     
+                            <label class="check-box">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <div class="upi-opt-1"><img src="https://i1.lmsin.net/website_images/in/my-account/bhim.png" alt=""></div>
+                        </div>
+                        <div class="upi-opt-all">     
+                            <label class="check-box">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                              </label>
+                            
+                            <div class="upi-opt-1"><img src="https://i1.lmsin.net/website_images/in/my-account/whatsapp.png" alt=""></div>
+                        </div>
+                        <div class="upi-opt-all">     
+                            <label class="check-box">
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                              </label>
+                
+                            <div class="upi-opt-1"><img src="https://i1.lmsin.net/website_images/in/my-account/other.png" alt=""><label class="lable_1">Other</label></div>
+                        </div>
+                        <div id="upi-opt-id-1">
+                            <input type="text" placeholder="Enter Your UPI Id">
+                        </div>
+                        <div id="upi-opt-id-2">
+                            <select name="" id="upi-opt-id-3">
+                                <option>Select your bank</option>
+                                <option>@okhdfcbank</option>
+                                <option>@oksbi</option>
+                                <option>okicici</option>
+                                <option>okaxis</option>
+                            </select>
+                        </div>
+                    </div></div>
                     </div>
-                    <div class="upi-opt-all">     
-                        <label class="check-box">
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                          </label>
-                        
-                        <div class="upi-opt-1"><img src="https://i1.lmsin.net/website_images/in/my-account/paytm.png" alt=""> </div>
+                    <div id="pay-gift">
+                        <div class="promo-card"><img src="https://i1.lmsin.net/website_images/common/images/basket/ico-gift.png" alt=""> Got a promo code? <a href="#">Use it here</a> </div>
+                        <div class="promo-card"><img src="https://i1.lmsin.net/website_images/in/giftcards/gift-card-icon.svg" alt=""> Have a gift card? <a href="#">Use it here</a></div>
                     </div>
-                    <div class="upi-opt-all">     
-                        <label class="check-box">
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                        </label>
-                        <div class="upi-opt-1"><img src="https://i1.lmsin.net/website_images/in/my-account/bhim.png" alt=""></div>
-                    </div>
-                    <div class="upi-opt-all">     
-                        <label class="check-box">
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                          </label>
-                        
-                        <div class="upi-opt-1"><img src="https://i1.lmsin.net/website_images/in/my-account/whatsapp.png" alt=""></div>
-                    </div>
-                    <div class="upi-opt-all">     
-                        <label class="check-box">
-                            <input type="checkbox" checked="checked">
-                            <span class="checkmark"></span>
-                          </label>
-            
-                        <div class="upi-opt-1"><img src="https://i1.lmsin.net/website_images/in/my-account/other.png" alt=""><label class="lable_1">Other</label></div>
-                    </div>
-                    <div id="upi-opt-id-1">
-                        <input type="text" placeholder="Enter Your UPI Id">
-                    </div>
-                    <div id="upi-opt-id-2">
-                        <select name="" id="upi-opt-id-3">
-                            <option>Select your bank</option>
-                            <option>@okhdfcbank</option>
-                            <option>@oksbi</option>
-                            <option>okicici</option>
-                            <option>okaxis</option>
-                        </select>
-                    </div>
-                </div></div>
-                </div>
-                <div id="pay-gift">
-                    <div class="promo-card"><img src="https://i1.lmsin.net/website_images/common/images/basket/ico-gift.png" alt=""> Got a promo code? <a href="#">Use it here</a> </div>
-                    <div class="promo-card"><img src="https://i1.lmsin.net/website_images/in/giftcards/gift-card-icon.svg" alt=""> Have a gift card? <a href="#">Use it here</a></div>
-                </div>
-                <div id="pay-now">
-                    <div> <p>By clicking on Proceed to Payment, you agree to our <a href="#">Terms and Conditions</a></p> </div>
-                    <div id="pay-btn">
-                        <button>Pay Now</button>
-                    </div>
-                </div>
-                <div id="term-cond">
-                    <div class="secure-logo">
-                        <img src="https://i1.lmsin.net/website_images/common/images/logos/logo-comodo.png" alt="secure logo">
-                    </div>
-                    <div class="secure-logo">
-                        <p>Your credit card details are securely encrypted and passed directly to our PCI DSS compliant Payment Gateway for processing. We only store your credit card's last 4 digits and the expiration date. Your traffic to this page is secured using either a 256-bit or 128-bit SSL certificate depending on your browser version.</p>
-                        <h5>© 2021 RNA Intellectual Property Limited</h5>
-                        <h5>Privacy Policy - Terms of Use - Terms & Conditions</h5>
-                    </div>
-                </div>
-            </div>
+                    <div id="pay-now">
+                        <div> <p>By clicking on Proceed to Payment, you agree to our <a href="#">Terms and Conditions</a></p> </div>
+                        <div id="pay-btn">
+                            <button>Pay Now</button>
+                        </div>
+                    </div></div></div>
+                    <div id="term-cond">
+                        <div class="secure-logo">
+                            <img src="https://i1.lmsin.net/website_images/common/images/logos/logo-comodo.png" alt="secure logo">
+                        </div>
+                        <div class="secure-logo">
+                            <p>Your credit card details are securely encrypted and passed directly to our PCI DSS compliant Payment Gateway for processing. We only store your credit card's last 4 digits and the expiration date. Your traffic to this page is secured using either a 256-bit or 128-bit SSL certificate depending on your browser version.</p>
+                            <h5>© 2021 RNA Intellectual Property Limited</h5>
+                            <h5>Privacy Policy - Terms of Use - Terms & Conditions</h5>
+                        </div>
+                    </div>    
         </div>
-        <div id="payment-cart-info"></div>
     </div>
 </body>
 </html>
