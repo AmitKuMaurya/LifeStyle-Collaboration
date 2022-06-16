@@ -13,24 +13,35 @@ function HomeDelivery(){
     
 }
 
-// 2.................................................................................................//
+// 2.......................Search City By Input..........................................................................//
+
+
+
+
 
 let storeDelivery= document.getElementById("store-delivery").addEventListener("click",StoreDelivery)
 
 function StoreDelivery(){
    let HideDiv1=document.getElementById("delivery-info").style.display="none";
    let HideDiv2=document.getElementById("location-info").style.display="block";
+   let input_tag=document.getElementById("city_search").style.display="block";
    
    let homeDelivery =document.getElementById("home-delivery").style.border="1px solid #bdc6ce";
-   let storeDelivery= document.getElementById("store-delivery").style.border="2px solid orange"
-    let city=document.getElementById("city_search").value;
+   let storeDelivery= document.getElementById("store-delivery").style.border="2px solid orange";
+   
+   let iframe=document.getElementById("gmap_canvas");
+   iframe.src=`https://maps.google.com/maps?q=nagpur&t=&z=13&ie=UTF8&iwloc=&output=embed` 
+
+   let city=document.getElementById("city").addEventListener("oninput",ShowMap)
+   function ShowMap(){
+    let city=document.getElementById("city").value;
+    console.log(city)
+   }
+}
 
 
 
-            let iframe=document.getElementById("gmap_canvas");
-            iframe.src=`https://maps.google.com/maps?q=${city}&t=&z=13&ie=UTF8&iwloc=&output=embed`
 
-        }
 
 //  3....Debit And Credit Card Div.....................................................................//
 
@@ -131,23 +142,56 @@ function upi_Pay(){
 
 //.......................for input tag ..................
 
-let input_tag=document.querySelector("input").addEventListener("input",checkInput)
-
-function checkInput(){
-    let input_tag=document.querySelector("input")
-    let input_value=document.querySelector("input").value;
-    if(input_value===null){
-       console.log("hello")
-    }else{
-        input_tag.style.borderBlock="rad"
-    }
-    
-}
 
 //..............................button Event...........................................................
 
-let button_show=document.getElementById("pay-btn").addEventListener("click",ShowStatus)
+let button_show=document.getElementById("pay-now").addEventListener("click",ShowStatus)
 
 function ShowStatus(){
+let UserArray=[]
+    let userData=document.getElementById("user-form-datails")
     
+    let UserData={
+        Uname:userData.user_name.value,
+        flat:userData.user_flat.value,
+        buildingName:userData.user_building_name.value,
+        City:userData.user_city.value,
+        state:userData.user_state.value,
+        pincode:userData.user_pin_cd.value,
+        contactNo:userData.user_contact.value,
+        
+    }
+    UserArray.push(UserData)
+    console.log(UserArray)
+    
+
+
+
+
+
+
+
+
+
+    let div_show =document.getElementById("out-put")
+    div_show.style.display="block"
+    let time =document.getElementById("order-process");
+    time.style.display="block"
+    let count=5;
+let id=setInterval(function(){
+    count--;
+    if(count===0){
+    clearInterval(id);
+    let time =document.getElementById("order-process");
+    time.style.display="none"
+    let div_show =document.getElementById("order-placed")
+    div_show.style.display="block"
+}
+},1000);
+
+let more_shop=document.getElementById("more-shop").addEventListener("click",moreShop)
+function moreShop(){
+   window.location.reload()
+}
+
 }

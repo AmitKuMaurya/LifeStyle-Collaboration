@@ -8,7 +8,21 @@
     <link rel="stylesheet" href="../common css/payment-navbar.css">
 </head>
 <body>
-    
+    <div id="out-put">
+        <div id="order-process">
+            <h3>Thanks you for shopping </h3>
+            <p>Order conformation is pending </p>
+            <img src="https://i.pinimg.com/originals/66/22/ab/6622ab37c6db6ac166dfec760a2f2939.gif" alt="">
+        </div>
+        <div id="order-placed">
+            <h3>Congratualation Order successfully placed</h3>
+            <img src="https://cdn.dribbble.com/users/825103/screenshots/2377568/happy-shopper.gif" alt="">
+            <button id="more-shop">More Shopping</button>
+
+        </div>
+    </div>
+
+    </div>
     <div id="payment-navbar">
         <div id="payment-logo">
             <img src="https://i1.lmsin.net/website_images/in/logos/logo-lifestyle.svg" alt="logo">
@@ -18,7 +32,6 @@
             <div> <p class="text-nav">Monday-Saturday, 09:00AM-07:00PM</p></div>
         </div>
     </div>
-
     <div id="main-div-payment">
         <div id="main1-div">
             <div id="payment-data">
@@ -38,23 +51,24 @@
                </div>
                 <div id="delivery-info">
                     <h1>Add your shipping address</h1>
+                    <form id="user-form-datails">
                     <p class="p-tag">Full Name</p>
-                    <input class="input-tag" type="text" placeholder="Enter your full name">
+                    <input class="input-tag" id="user_name" type="text" placeholder="Enter your full name">
                     <p class="p-tag">Mobile Number</p>
-                    <input class="input-tag" type="text" placeholder="Enter your mobile number">
+                    <input class="input-tag" id="user_contact" type="text" placeholder="Enter your mobile number">
                     <p class="p-tag">Pincode</p>
-                    <input class="input-tag" type="text" placeholder="Enter your Pincode">
+                    <input class="input-tag" id="user_pin_cd" type="text" placeholder="Enter your Pincode">
                     <p class="p-tag">City</p>
-                    <input class="input-tag" type="text" placeholder="Enter your City or Town">
+                    <input class="input-tag" id="user_city" type="text" placeholder="Enter your City or Town">
                     <p class="p-tag">State</p>
-                    <input class="input-tag" type="text" placeholder="Enter your state">
+                    <input class="input-tag" id="user_state" type="text" placeholder="Enter your state">
                     <p class="p-tag">Building name or number</p>
-                    <input class="input-tag" type="text" placeholder="Enter Building Name">
+                    <input class="input-tag" id="user_building_name" type="text" placeholder="Enter Building Name">
                     <p class="p-tag">Street name or number</p>
-                    <input class="input-tag" type="text" placeholder="Flat/House number, floor,Building">
+                    <input class="input-tag" id="user_flat" type="text" placeholder="Flat/House number, floor,Building">
                     <div class="optional-tag"> <p class="p-tag">Landmark</p><p class="opt-tag">(optional)</p></div>
-                    <input class="input-tag" type="text" placeholder="Enter your full name">
-                    <div class="optional-tag"><p class="p-tag">Address Type</p><p class="opt-tag">(optional)</p></div>
+                    <input class="input-tag" type="text" id="user_full_name" placeholder="Enter your full name">
+                    <div class="optional-tag"><p class="p-tag">Address Type</p><p class="opt-tag">(optional)</p></div></form>
                     <div id="home-office">
                         <div><label class="check-box">
                             <input type="checkbox" checked="checked">
@@ -65,13 +79,15 @@
                             <span class="checkmark"></span>
                           Office</label></div></div>
                 </div>
+                <div  id="city_search">
+                    <input id="city" type="text" placeholder="Enter city">
+                </div>
                 <div id="location-info">
-                    <input id="city_search" type="text" placeholder="Enter city">
                     <div class="mapouter">
                         <div class="gmap_canvas">
                             <iframe 
-                            width="600" 
-                            height="500" 
+                            width="auto" 
+                            height="auto" 
                             id="gmap_canvas" 
                             frameborder="0" 
                             scrolling="no" 
@@ -118,7 +134,7 @@
                     
                 </div>
                 </div>
-                <h1>Select a payment method</h1>
+                <h2>Select a payment method</h2>
                 <div id="payment-datails">
                     <div id="pay-opt">
                         <div id="debit-card" class="pay1">
@@ -330,7 +346,7 @@
                     <div id="pay-now">
                         <div> <p>By clicking on Proceed to Payment, you agree to our <a href="#">Terms and Conditions</a></p> </div>
                         <div id="pay-btn">
-                            <button>Pay Now</button>
+                            <button id="pay-now">Pay Now</button>
                         </div>
                     </div></div></div>
                     <div id="term-cond">

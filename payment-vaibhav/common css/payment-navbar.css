@@ -3,8 +3,10 @@
     padding: 0px;
     font-family: ProximaNova-Regular,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
 }
-
-/* for navbar ...........................................................................................................................*/
+h2{
+  margin-top: 5%;
+}
+/* ................................................................for navbar ...................................................................................................*/
 #payment-navbar{
         display: flex;
         justify-content: space-between;
@@ -31,8 +33,7 @@
     margin-left: 10px;
 
 }
-
-/* for payment-data css part */
+/* ........................................................for payment-data css part ..............................................................................*/
 #all-data{
   display: flex;
 }
@@ -115,7 +116,7 @@
   color: rgb(165, 163, 163);
 }
 
-/* delivery-options div css .............................................................................................*/
+/* .................................................delivery-options div css .............................................................................................*/
 
 #delivery-options{
     margin: auto;
@@ -142,9 +143,10 @@
 }
 #location-info{
   width: 100%;
+
 }
 
-/*  All Payment Part CSS  .......................................................................................*/
+/*  ............................................................All Payment Part CSS  .......................................................................................*/
 #payment-datails{
     margin-top: 2%;
 }
@@ -192,21 +194,21 @@
 #pay-now>div{
     width: 50%;
 }
-/* #pay-now>p{
-    font-size: 12px;
-} */
+
 p>a{
 color: #72818D;
 }
 
 #pay-btn>button{
-    width: 80%;
+    width: 70%;
+    text-align: center;
     background-color: #FAA619;
     padding: 5%;
     border: 0px;
     color: #FFFFFF;
     margin-left: 10%;
     border-radius: 10px;
+    font-weight: bold;
     
 }
 #pay-btn>button:hover{
@@ -233,13 +235,13 @@ color: #72818D;
 
 
 
-/* for check box  ..........................................................................................*/
+/* ..................................................................for check box  ..........................................................................................*/
 /* Customize the label (the container) */
 .check-box {
     display: block;
     position: relative;
     padding-left: 35px;
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
     cursor: pointer;
     font-size: 20px;
     -webkit-user-select: none;
@@ -302,7 +304,33 @@ color: #72818D;
     background: orange;
   }
 
-  /* First Card deatils ....................................................................................................*/
+
+  /*.............................................................Map CSS ..........................................................................*/
+  .gmap_canvas{
+    width: 600px;
+    height: 600px;
+    /* border: 2px solid; */
+    margin-left: 20px;
+  }
+  iframe{
+    width: 100%;
+    height: 100%;
+    /* margin-left: 7%; */
+  }
+  #city_search{
+    width: 15%;
+    position: absolute;
+    margin-top: 3.5%;
+    margin-left: 2.5%;
+
+  }
+  #city_search>input{
+    padding: 2%;
+    width: 100%;
+  }
+  
+
+  /* ...........................................................First Card deatils ....................................................................................................*/
   #card-details{
     display: none;
     /* border: 1px solid red; */
@@ -456,12 +484,22 @@ color: #72818D;
   }
 
   /*.......................iframe.CSS...........................................................*/
+ #city_search{
+  display: none;
+ }
+ 
   #location-info{
     display: none;
   }
-  .gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px};
+  .gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    height:600px;
+    width:740px
+  
+  };
         .mapouter{
-            width: 50%;
+            width: 100%;
             height: 200px;
         }
         #main{
@@ -470,7 +508,7 @@ color: #72818D;
             display: flex;
             justify-content: center;
         }
-  /*...........Oder summary CSS........................................................................*/
+  /*...........Order summary CSS........................................................................*/
   #payment-basket-info{
     /* position: fixed;
     top: 10%;
@@ -506,9 +544,51 @@ color: #72818D;
     margin-top: 5%;
   }
 
+  /*..............................After Pay Now.....................................................*/
+  
+  /* pay-btn */
+  #out-put{
+    width: 400px;
+    height: 250px;
+    position:absolute;
+    background-color: rgba(63, 86, 61, 0.466);
+    margin-top: 1550px;
+    margin-left:700px ;
+    padding: 1%;
+    display: none;
+    
 
-
-  /*...................................................................................*/
+}
+#order-process{
+  /* display: block; */
+}
+#order-placed{
+    display: none;
+}
+#order-process>img,#order-placed>img{
+    width: 40%;
+    margin-left: 30%;
+}
+#order-process>h3,#order-placed>h3,#order-process>p,#order-placed>p{
+    text-align: center;
+    margin-bottom: 7%;
+    margin-top: 5%;
+}
+#more-shop{
+    width: 150px;
+    margin-top: 15px;
+    margin-left: 31%;
+    padding:10px;
+    background-color: #e37536;
+    border: 0px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: rgb(237, 230, 230);
+    cursor: pointer;
+}
+#more-shop:hover{
+  background-color: #4e392c;
+}
 
   /*...................................................................................*/
 
