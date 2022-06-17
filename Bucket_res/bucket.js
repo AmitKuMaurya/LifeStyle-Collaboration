@@ -13,6 +13,9 @@ let displayData = (bucketArr) => {
     let div_cont = document.createElement("div");
     div_cont.setAttribute("id", "div-holder");
 
+    let product_div = document.createElement("div");
+    product_div.setAttribute('id','Pro-div');
+
     let div1 = document.createElement("div");
     div1.setAttribute("id", "div-img");
 
@@ -22,20 +25,20 @@ let displayData = (bucketArr) => {
     let div2 = document.createElement("div");
     div2.setAttribute("id", "div-content");
 
-    let tit = document.createElement("p");
+    let tit = document.createElement("h4");
     tit.innerText = ele.productName;
 
-    let dis = document.createElement("p");
-    dis.innerText = ele.discount;
+    let dis = document.createElement("h5");
+    dis.innerText = "₹"+ele.discount+" Saved";
 
     let size = document.createElement("p");
-    size.innerText = "size: " + ele.size;
+    size.innerText = "size : " + ele.size;
 
     let clr = document.createElement("p");
-    clr.innerText = "color: " + ele.color;
+    clr.innerText = "color : " + ele.color;
 
-    let price = document.createElement("p");
-    price.innerText = ele.price;
+    let price = document.createElement("h5");
+    price.innerText = "₹"+ele.price;
 
     let m_div = document.createElement("div");
     m_div.setAttribute("id", "middle-div");
@@ -88,9 +91,10 @@ let displayData = (bucketArr) => {
     add_to_fav.style.cursor = "pointer";
 
     div1.append(img);
-    div2.append(tit, price, dis, clr, size, m_div);
+    div2.append(tit, price, dis, clr, size);
+    product_div.append(div1,div2);
+    div_cont.append(product_div,m_div,button_div);
     button_div.append(remove, add_to_fav);
-    div_cont.append(div1, div2, button_div);
     contain.append(div_cont);
   });
 };
@@ -117,7 +121,7 @@ let CalculateTotal = bucketArr.reduce(function (acc, ele) {
 document.getElementById('Disocunt-price').innerText = "-₹" + CalculateDiscount;
 
 
-let q = document.getElementsByTagName('option');
+// let q = document.getElementsByTagName('option');
 document.getElementById("Purcahse-price").innerText = "₹" + CalculateMRP;
 
 document.getElementById("Total-price").innerText = "₹" + CalculateTotal;

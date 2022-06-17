@@ -36,28 +36,57 @@ body{
     /* top: 2%;
     left: 3%; */
 }
-/* #left-bucket>#div-holder{
-    display: flex;
-    align-items: center;
+#left-bucket>#div-holder{
+    /* display: flex; */
+    /* align-items: center;
     justify-content: center;
-    display: block;
-} */
+    display: block; */
+}
 
-#div-holder>#div-content{
-    display: inline-block;
+#left-bucket>#div-holder>#Pro-div>#div-content{
+    /* display: inline-block; */
     margin-left: 7%;
 }
 #div-holder>#div-img{
-    display: inline-block;
-    position: absolute;
+    /* display: inline-block; */
+    /* position: absolute; */
     /* bottom: 10%; */
-    top: 2%;
-    left: 3%;
+    /* top: 2%; */
+    /* left: 3%; */
 }
-#left-bucket>#div-holder>div>img{
+#div-holder{
+    margin-bottom: 3%;
+}
+#div-content>h5{
+    display: inline-block;
+    padding-right: 15px;
+    margin-top: -13px;
+}
+
+#div-content>h5+h5{
+    /* display: block; */
+    color: #46b275;
+    margin-top: -10px;
+}
+#div-content>h5+p{
+    margin-top: -10px;
+    font-size: 13px;
+    color: grey;
+}
+#div-content>p+p{
+    margin-top: -10px;
+    font-size: 13px;
+    color: grey;
+}
+#left-bucket>#div-holder>#Pro-div>div>img{
     height: 100px;
     width: 100%;
-    display: inline-block;
+    margin-top: 6%;
+    margin-left: 6%;
+    /* display: block; */
+}
+#Pro-div{
+    display: flex;
 }
 /* #left-bucket>#div-holder>div:last-child{
 margin-left: 20px;
@@ -141,7 +170,7 @@ margin-left: 20px;
     margin-top: -12px;
 }
 #discount>h5{
-    color: green;
+    color: #46b275;
 }
 #shipping{
     width: 90%;
