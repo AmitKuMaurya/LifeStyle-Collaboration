@@ -1,6 +1,6 @@
-1. Vaibhav Gharwale
-2. Sharun
-3. Malaya Ranjan Ghadei
-4. Anshul Singla
-5. Chandan Sharma
-6. Amit Maurya
+1. Vaibhav Gharwale - payments page
+2. Sharun - products
+3. Malaya Ranjan Ghadei - landing page
+4. Anshul Singla - login-Signup
+5. Chandan Sharma - products
+6. Amit Maurya - bucket
