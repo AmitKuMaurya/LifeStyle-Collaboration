@@ -332,9 +332,9 @@ color: #72818D;
 
   /* ...........................................................First Card deatils ....................................................................................................*/
   #card-details{
-    display: none;
+    display: block;
     /* border: 1px solid red; */
-    width: 50%;
+    width: 70%;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
     padding: 5%;
 
@@ -348,13 +348,13 @@ color: #72818D;
   .card-1-1{
     display: flex;
   }
-  #card-details>input{
+  #form>input{
     width: 100%;
     /* height: 40px; */
     border:1px solid #bdc6ce;
     margin-top: 1%;
     margin-bottom: 3%;
-    padding: 3.5%;
+    padding: 2.5%;
     
   }
   #card-details>h3{
@@ -395,7 +395,7 @@ color: #72818D;
     display: none;
     width: 50%;
   }
-  #net-banking-div>input{
+  #net-banking-div>select{
     width: 90%;
     padding: 3.5%;
     /* margin-left: -20%; */
@@ -407,10 +407,16 @@ color: #72818D;
     width: 50%;
     /* border: 1px solid red; */
   }
+  #select-wallet{
+    width: 90%;
+    border: 1px solid;
+    padding: 5%;
+  }
   #wallet-div-info{
     display: none;
-    background-color: rgba(255, 255, 255, 0.447);
+    background-color:white;
     position: absolute;
+    margin-left: -50px;
     box-shadow: rgba(36, 35, 35, 0.05) 0px 0px 0px 1px;
     cursor: pointer;
     padding:2% ;
@@ -552,8 +558,8 @@ color: #72818D;
     height: 250px;
     position:absolute;
     background-color: rgba(63, 86, 61, 0.466);
-    margin-top: 1550px;
-    margin-left:700px ;
+    margin-top: -330px;
+    margin-left:450px ;
     padding: 1%;
     display: none;
     
@@ -588,6 +594,27 @@ color: #72818D;
 }
 #more-shop:hover{
   background-color: #4e392c;
+}
+#order-process{
+  display: none;
+
+}
+#final-confirmation>h2{
+  margin-bottom: 10px;
+  text-align: center;
+  color: wheat;
+}
+
+#final-confirmation{
+  text-align: justify;
+}
+#checck_info{
+  width: 200px;
+  padding: 5px;
+  margin-top: 20px;
+  margin-left: 23%;  
+  border: 0px;
+  background-color: yellowgreen;
 }
 
   /*...................................................................................*/

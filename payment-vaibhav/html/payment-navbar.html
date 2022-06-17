@@ -4,24 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Online Shoping at Lifestyle</title>
     <link rel="stylesheet" href="../common css/payment-navbar.css">
 </head>
 <body>
-    <div id="out-put">
-        <div id="order-process">
-            <h3>Thanks you for shopping </h3>
-            <p>Order conformation is pending </p>
-            <img src="https://i.pinimg.com/originals/66/22/ab/6622ab37c6db6ac166dfec760a2f2939.gif" alt="">
-        </div>
-        <div id="order-placed">
-            <h3>Congratualation Order successfully placed</h3>
-            <img src="https://cdn.dribbble.com/users/825103/screenshots/2377568/happy-shopper.gif" alt="">
-            <button id="more-shop">More Shopping</button>
-
-        </div>
-    </div>
-
     </div>
     <div id="payment-navbar">
         <div id="payment-logo">
@@ -156,19 +142,19 @@
                                         <input type="checkbox" checked="checked">
                                         <span class="checkmark"></span>
                                       </label>Debit Card</div>
-                                </div>
+                                </div><form id="form">
                                 <h3>Card Number</h3>
-                                <input type="text" placeholder="Enter your 16 digit card number">
+                                <input type="number" placeholder="Enter your 16 digit card number">
                                 <h3>Name on Card</h3>
                                 <input type="text" placeholder="Name on card">
-                                <h3>Expiry Date</h3>
-                                <input type="text" placeholder="Enter your 16 digit card number">
+                                <h3>Expiry Year</h3>
+                                <input type="number" placeholder="Enter Expiry Year"></form>
                                 <div id="bill-address-check">
                                     <div class="bill-address"><input type="checkbox"><p>Save this card for future transaactions</p></div>
                                     <h3>Billing Address</h3>
                                     <div class="bill-address"><input type="checkbox"><h3>Is billing address the same as shipping address?</h3></div>
-                                    </div>
-                                </div>
+                                    </div>>
+                        </div>
                         </div>
                         <div id="emi" class="pay2">
                         <div class="pay-options">
@@ -223,7 +209,47 @@
                               </label>
                             <div class="pay-logo"><img src="https://i1.lmsin.net/website_images/in/my-account/ico-payment-netbanking.png" alt="net-banking"></div>
                             <div class="pay-info"><h3>Net Banking</h3><p>Pay by your preferred bank account</p></div>
-                            <div id="net-banking-div"><input type="text" placeholder="Net Banking"></div>
+                            <div id="net-banking-div">
+                                <select name="bankname" class="form-control" required>
+                                <option selected="selected" value="0">--Select --</option>
+                                <option value="1">ALLAHABAD BANK </option>
+                                <option value="2">ANDHRA BANK</option>
+                                <option value="3">AXIS BANK</option>
+                                <option value="29">STATE BANK OF INDIA</option>
+                                <option value="4">BANK OF BARODA</option>
+                                <option value="29">UCO BANK</option>
+                                <option value="29">UNION BANK OF INDIA</option>
+                                <option value="5">BANK OF INDIA</option>
+                                <option value="20">BANDHAN BANK LIMITED</option>
+                                <option value="7">CANARA BANK</option>
+                                <option value="32">GRAMIN VIKASH BANK</option>
+                                <option value="8">CORPORATION BANK</option>
+                                <option value="9">INDIAN BANK</option>
+                                <option value="10">INDIAN OVERSEAS BANK</option>
+                                <option value="11">ORIENTAL BANK OF COMMERCE</option>
+                                <option value="12">PUNJAB AND SIND BANK</option>
+                                <option value="13">PUNJAB NATIONAL BANK</option>
+                                <option value="14">RESERVE BANK OF INDIA</option>
+                                <option value="15">SOUTH INDIAN BANK</option>
+                                <option value="16">UNITED BANK OF INDIA</option>
+                                <option value="17">CENTRAL BANK OF INDIA</option>
+                                <option value="18">VIJAYA BANK</option>
+                                <option value="19">DENA BANK</option>
+                                <option value="21">BHARATIYA MAHILA BANK LIMITED</option>
+                                <option value="22">FEDERAL BANK LTD </option>
+                                <option value="23">HDFC BANK LTD</option>
+                                <option value="24">ICICI BANK LTD</option>
+                                <option value="25">IDBI BANK LTD</option>
+                                <option value="66">PAYTM BANK</option>
+                                <option value="29">FINO PAYMENT BANK</option>
+                                <option value="26">INDUSIND BANK LTD</option>
+                                <option value="27">KARNATAKA BANK LTD</option>
+                                <option value="28">KOTAK MAHINDRA BANK</option>
+                                <option value="30">YES BANK LTD</option>
+                                <option value="31">SYNDICATE BANK</option>
+                                <option value="5">BANK OF INDIA</option>
+                                <option value="6">BANK OF MAHARASHTRA</option>
+                              </select></div>
                         </div>
                         <div class="pay-options pay6" id="wallets">
                             <label class="check-box">
@@ -232,7 +258,7 @@
                               </label>
                             <div class="pay-logo"><img src="https://i1.lmsin.net/website_images/in/my-account/ico-payment-wallet.png" alt="wallwt logo"></div>
                             <div class="pay-info"><h3>Wallets</h3><p>Pay by your preferred wallet.</p></div>
-                            <div id="wallet-div"><input type="text" placeholder="Select a wallet">
+                            <div id="wallet-div"><div id="select-wallet">Select Wallet</div>
                             <div id="wallet-div-info">
                                 <div class="wallet-div-all">
                                 <div class="wallet-img"><img src="https://i1.lmsin.net/website_images/in/payment/wallets/desktop/amzpay@2x.png" alt=""></div>
@@ -347,6 +373,20 @@
                         <div> <p>By clicking on Proceed to Payment, you agree to our <a href="#">Terms and Conditions</a></p> </div>
                         <div id="pay-btn">
                             <button id="pay-now">Pay Now</button>
+                            <div id="out-put">
+                                <div id="order-process">
+                                    <h3 id="note-1"></h3>
+                                    <p>Order conformation is pending </p>
+                                    <img src="https://i.pinimg.com/originals/66/22/ab/6622ab37c6db6ac166dfec760a2f2939.gif" alt="">
+                                </div>
+                                <div id="order-placed">
+                                    <h3 id="note-2"></h3>
+                                    <img src="https://cdn.dribbble.com/users/825103/screenshots/2377568/happy-shopper.gif" alt="">
+                                    <button id="more-shop">More Shopping</button>
+                                </div>
+                                <div id="final-confirmation"></div>
+                                <div id="bank_conf"></div>
+                            </div>
                         </div>
                     </div></div></div>
                     <div id="term-cond">
