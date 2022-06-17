@@ -72,8 +72,6 @@
                     <div class="mapouter">
                         <div class="gmap_canvas">
                             <iframe 
-                            width="auto" 
-                            height="auto" 
                             id="gmap_canvas" 
                             frameborder="0" 
                             scrolling="no" 
@@ -87,18 +85,19 @@
                     
                         <div id="product-basket">
                             <h2>Your Order summary</h2>
-                            <div id="append-basket"></div>
+                            <div id="append-basket">
+                            </div>
                             <div class="summary-cost-class" id="subtotal">
                                 <div>Subtotal:</div>
-                                <div>$2497</div>
+                                <div><p id="sub_total"></p></div>
                             </div>
                             <div class="summary-cost-class" id="shipping-cost">
                                 <div><p>Standard Group Shipping:</p><p>(2-4 business days)</p></div>
-                                <div>Free</div> 
+                                <div id="deli_charge"></div> 
                             </div>
                             <div class="summary-cost-class" id="total-cost">
                                 <div>Subtotal:</div>
-                                <div>$2497</div>
+                                <div id="total_cost"></div>
                             </div>
                             <div class="summary-cost-class" id="pay-note">
                                 <p>Shipping charges might vary based on delivery location</p>
@@ -385,7 +384,7 @@
                                     <button id="more-shop">More Shopping</button>
                                 </div>
                                 <div id="final-confirmation"></div>
-                                <div id="bank_conf"></div>
+
                             </div>
                         </div>
                     </div></div></div>

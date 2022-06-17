@@ -28,9 +28,20 @@ function StoreDelivery(){
    
    let homeDelivery =document.getElementById("home-delivery").style.border="1px solid #bdc6ce";
    let storeDelivery= document.getElementById("store-delivery").style.border="2px solid orange";
+
+   let count=3;
+    let id=setInterval(function(){
+        let iframe=document.getElementById("gmap_canvas");
+        iframe.src="https://flevix.com/wp-content/uploads/2019/07/Curve-Loading.gif"
+    count--;
+    if(count===0){
+    clearInterval(id);
+    let iframe=document.getElementById("gmap_canvas");
+    iframe.src=`https://maps.google.com/maps?q=nagpur&t=&z=13&ie=UTF8&iwloc=&output=embed` 
+}
+},1000);
    
-   let iframe=document.getElementById("gmap_canvas");
-   iframe.src=`https://maps.google.com/maps?q=nagpur&t=&z=13&ie=UTF8&iwloc=&output=embed` 
+
 
    let city=document.getElementById("city").addEventListener("oninput",ShowMap)
    function ShowMap(){
@@ -175,18 +186,21 @@ let UserArray=[]
 
     let flat=document.createElement("p")
     flat.innerText=`Flat No.:${UserArray[0].flat}`
+
+    let not4=document.createElement("h2")
+        not4.innerText=`Payable Amount :₹${subtotal}`
     
     let com_btn=document.createElement("button")
     com_btn.id="checck_info"
     com_btn.innerText="Conform"
     com_btn.addEventListener("click",Csheck_Info)
 
-    console.log(h2,name,flat,buildingname,city,state,pincode,contact)
+    console.log(h2,name,flat,buildingname,city,state,pincode,contact,not4)
 
     let div_show =document.getElementById("out-put")
     div_show.style.display="block"
 
-    check_inform.append(h2,name,flat,buildingname,city,state,pincode,contact,com_btn)
+    check_inform.append(h2,name,flat,buildingname,city,state,pincode,contact,not4,com_btn)
     div_show.append(check_inform)
     
 //8............................................button Event.............................................................//
@@ -225,5 +239,89 @@ function moreShop(){
 }
 
 //................................. Data Append to ..........................................................................//
+
+let Summary=JSON.parse(localStorage.getItem("checkout"));
+let n=Summary[Summary.length-1]
+
+let summary=(n)=>{
+
+  n.forEach(function(ele,i){
+
+    let summ_div = document.getElementById("append-basket");
+
+    let prod_div = document.createElement("div");
+    prod_div.setAttribute("id", "prod_div");
+
+    let img_div = document.createElement("div");
+    img_div.setAttribute("id", "div-img");
+
+    let img = document.createElement("img");
+    img.src = ele.img;
+
+    let info_div = document.createElement("div");
+    info_div.setAttribute("id", "info_div");
+
+    let main_t=document.createElement("p")
+    main_t.id="main_t"
+    main_t.innerText="LIFESTYLE"
+
+    let tit = document.createElement("p");
+    tit.innerText = ele.productName;
+
+
+    let m_div = document.createElement("div");
+    m_div.setAttribute("id", "middle-div");
+
+
+    let _quan = document.createElement("div");
+    _quan.setAttribute("id", "quants");
+
+    let quant=document.createElement("p")
+    quant.innerText=`Qty:${1}`
+
+    let price = document.createElement("p");
+    price.id="price_tag"
+    price.innerText =`Price: ₹${ele.price}`;
+
+    _quan.append(quant)
+    m_div.append(_quan,price)
+    info_div.append(main_t,tit,m_div)
+    img_div.append(img)
+    prod_div.append(img_div,info_div)
+    summ_div.append(prod_div)
+  })
+}
+summary(n);
+
+let subtotal = n.reduce(function (acc, ele) {
+    return Math.round(acc + ele.price);
+}, 0);
+
+let SubTotal =subtotal+40
+
+let total_price=document.getElementById("sub_total")
+total_price.innerText=`₹${subtotal}`
+
+ if(total_price<=999){
+    let total_p=document.getElementById("total_cost")
+    total_p.innerText=`₹${SubTotal}`
+    let deli_charge=document.getElementById("deli_charge")
+    deli_charge.innerText=`₹${40}`
+   }else{
+    let total_p=document.getElementById("total_cost")
+     total_p.innerText=`₹${subtotal}`
+     let deli_charge=document.getElementById("deli_charge")
+    deli_charge.innerText="Free"
+   }
+
+// ......................Continue Last Pay Now Button....................................................................
+
+// let bank_conf=document.getElementById("bank_conf")
+// let not3=document.getElementById("u_details")
+// not3.innerText=`${UserArray[0].Uname} Please Conform Your Order Payment`
+// let not4=document.getElementById("amt_com")
+// not4.innerText=`₹ ${subtotal}`
+// let sub=document.getElementById("amt-pay").addEventListener("click",paymentComfirm)
+
 
 
