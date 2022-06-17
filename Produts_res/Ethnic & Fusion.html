@@ -20,18 +20,39 @@
         padding-bottom: 48px;
       }
 
+      #sortingPanel{
+        display: flex;
+        gap: 2rem;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: -7%;
+      }
+
       #container {
+        margin: auto;
+        width: 90%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 15px;
-        width: 80%;
-        margin-left: 12.5%;
+        margin-top: 10%;
+       
+      
+        
       }
-      img {
-        height: 440px;
-        width: 297px;
-        cursor: pointer;
+      /* #container>div{
+        transition: 900ms;
+       
+       
+      } */
+      #container>div:hover{
+        transform: scale(1.1px);
       }
+      #container>div>img{
+        width: 100%;
+
+      }
+
+    
       #selectDiv {
         display: flex;
         justify-content: space-between;
@@ -64,88 +85,110 @@
       }
 
       .fiting:hover {
-        transform: scale(1.1);
+       
         box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
           rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
         border: 15px solid white;
       }
+      #sortingPanel>select{
+        background-color: #faa619;
+        border: 1px solid rgb(255, 153, 0);
+        border-radius: 3px;
+       
+        font-weight: 100;
+        font-size: 20px;
+        color: white;
+      }
+      #sortingPanel>select>option{
+        background: white;
+        color: black;
+      }
     </style>
   </head>
   <body>
-    <div id="container"></div>
+    <div id="sortingPanel"></div>
+    <div id="container">
+
+    </div>
   </body>
 </html>
 <script>
-    var Wdata =[{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009401546-Blue-Navy-1000009401546_01-2100.jpg",price:524,productName:"AURELIA Women Yoke Design Straight Kurta", discount: 520,size:"s",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010544211-Blue-Navy-1000010544211_01-2100.jpg",price:654,productName:"MELANGE Women Printed Band Collar Kurta",discount: 50,size:"x",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010024886-Pink-Pink-1000010024886_01-2100.jpg",price:1744,productName:"MELANGE Women Printed Kurta with Straight Pants",discount:50,size:"l",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010784074-White-Offwhite-1000010784074_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered V-Neck Straight Kurta",discount: 570,size:"xl",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010427441-Red-Red-1000010427441_01-2100.jpg",price:1119,productName:"COLOUR ME Women Printed Ethnic A-Line Dress",discount: 240,size:"s",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010425312-Blue-Teal-1000010425312_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Straight Kurta",discount: 240,size:"m",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011023003-Pink-Pink-1000011023003_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Round Neck A-Line Kurta",discount: 520,size:"s",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010130875-White-White-1000010130875_01-2100.jpg",price:949,productName:"SPAN Women Printed Three-quarter Sleeves A-line Kurta",discount: 450,size:"x",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009401546-Blue-Navy-1000009401546_01-2100.jpg",price:524,productName:"AURELIA Women Yoke Design Straight Kurta", discount: 520,size:"s",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010544211-Blue-Navy-1000010544211_01-2100.jpg",price:654,productName:"MELANGE Women Printed Band Collar Kurta",discount: 50,size:"x",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010024886-Pink-Pink-1000010024886_01-2100.jpg",price:1744,productName:"MELANGE Women Printed Kurta with Straight Pants",discount:50,size:"l",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010784074-White-Offwhite-1000010784074_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered V-Neck Straight Kurta",discount: 570,size:"xl",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010427441-Red-Red-1000010427441_01-2100.jpg",price:1119,productName:"COLOUR ME Women Printed Ethnic A-Line Dress",discount: 240,size:"s",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010425312-Blue-Teal-1000010425312_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Straight Kurta",discount: 240,size:"m",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011023003-Pink-Pink-1000011023003_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Round Neck A-Line Kurta",discount: 520,size:"s",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010130875-White-White-1000010130875_01-2100.jpg",price:949,productName:"SPAN Women Printed Three-quarter Sleeves A-line Kurta",discount: 450,size:"x",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009401546-Blue-Navy-1000009401546_01-2100.jpg",price:524,productName:"AURELIA Women Yoke Design Straight Kurta", discount: 520,size:"s",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010544211-Blue-Navy-1000010544211_01-2100.jpg",price:654,productName:"MELANGE Women Printed Band Collar Kurta",discount: 50,size:"x",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010024886-Pink-Pink-1000010024886_01-2100.jpg",price:1744,productName:"MELANGE Women Printed Kurta with Straight Pants",discount:50,size:"l",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010784074-White-Offwhite-1000010784074_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered V-Neck Straight Kurta",discount: 570,size:"xl",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010427441-Red-Red-1000010427441_01-2100.jpg",price:1119,productName:"COLOUR ME Women Printed Ethnic A-Line Dress",discount: 240,size:"s",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010425312-Blue-Teal-1000010425312_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Straight Kurta",discount: 240,size:"m",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011023003-Pink-Pink-1000011023003_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Round Neck A-Line Kurta",discount: 520,size:"s",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010130875-White-White-1000010130875_01-2100.jpg",price:949,productName:"SPAN Women Printed Three-quarter Sleeves A-line Kurta",discount: 450,size:"x",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009401546-Blue-Navy-1000009401546_01-2100.jpg",price:524,productName:"AURELIA Women Yoke Design Straight Kurta", discount: 520,size:"s",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010544211-Blue-Navy-1000010544211_01-2100.jpg",price:654,productName:"MELANGE Women Printed Band Collar Kurta",discount: 50,size:"x",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010024886-Pink-Pink-1000010024886_01-2100.jpg",price:1744,productName:"MELANGE Women Printed Kurta with Straight Pants",discount:50,size:"l",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010784074-White-Offwhite-1000010784074_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered V-Neck Straight Kurta",discount: 570,size:"xl",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010427441-Red-Red-1000010427441_01-2100.jpg",price:1119,productName:"COLOUR ME Women Printed Ethnic A-Line Dress",discount: 240,size:"s",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010425312-Blue-Teal-1000010425312_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Straight Kurta",discount: 240,size:"m",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011023003-Pink-Pink-1000011023003_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Round Neck A-Line Kurta",discount: 520,size:"s",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010130875-White-White-1000010130875_01-2100.jpg",price:949,productName:"SPAN Women Printed Three-quarter Sleeves A-line Kurta",discount: 450,size:"x",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009401546-Blue-Navy-1000009401546_01-2100.jpg",price:524,productName:"AURELIA Women Yoke Design Straight Kurta", discount: 520,size:"s",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010544211-Blue-Navy-1000010544211_01-2100.jpg",price:654,productName:"MELANGE Women Printed Band Collar Kurta",discount: 50,size:"x",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010024886-Pink-Pink-1000010024886_01-2100.jpg",price:1744,productName:"MELANGE Women Printed Kurta with Straight Pants",discount:50,size:"l",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010784074-White-Offwhite-1000010784074_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered V-Neck Straight Kurta",discount: 570,size:"xl",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010427441-Red-Red-1000010427441_01-2100.jpg",price:1119,productName:"COLOUR ME Women Printed Ethnic A-Line Dress",discount: 240,size:"s",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010425312-Blue-Teal-1000010425312_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Straight Kurta",discount: 240,size:"m",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011023003-Pink-Pink-1000011023003_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Round Neck A-Line Kurta",discount: 520,size:"s",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010130875-White-White-1000010130875_01-2100.jpg",price:949,productName:"SPAN Women Printed Three-quarter Sleeves A-line Kurta",discount: 450,size:"x",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009401546-Blue-Navy-1000009401546_01-2100.jpg",price:524,productName:"AURELIA Women Yoke Design Straight Kurta", discount: 520,size:"s",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010544211-Blue-Navy-1000010544211_01-2100.jpg",price:654,productName:"MELANGE Women Printed Band Collar Kurta",discount: 50,size:"x",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010024886-Pink-Pink-1000010024886_01-2100.jpg",price:1744,productName:"MELANGE Women Printed Kurta with Straight Pants",discount:50,size:"l",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010784074-White-Offwhite-1000010784074_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered V-Neck Straight Kurta",discount: 570,size:"xl",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010427441-Red-Red-1000010427441_01-2100.jpg",price:1119,productName:"COLOUR ME Women Printed Ethnic A-Line Dress",discount: 240,size:"s",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010425312-Blue-Teal-1000010425312_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Straight Kurta",discount: 240,size:"m",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011023003-Pink-Pink-1000011023003_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Round Neck A-Line Kurta",discount: 520,size:"s",color:"red",},
-                {img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010130875-White-White-1000010130875_01-2100.jpg",price:949,productName:"SPAN Women Printed Three-quarter Sleeves A-line Kurta",discount: 450,size:"x",color:"red",},
-                
-            ];
-    var basketArr = JSON.parse(localStorage.getItem("products")) || [];
+
+var Wdata =[{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009401546-Blue-Navy-1000009401546_01-2100.jpg",price:524,productName:"AURELIA Women Yoke Design Straight Kurta", discount: 520,size:"s",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010544211-Blue-Navy-1000010544211_01-2100.jpg",price:654,productName:"MELANGE Women Printed Band Collar Kurta",discount: 50,size:"x",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010024886-Pink-Pink-1000010024886_01-2100.jpg",price:1744,productName:"MELANGE Women Printed Kurta with Straight Pants",discount:50,size:"l",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010784074-White-Offwhite-1000010784074_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered V-Neck Straight Kurta",discount: 570,size:"xl",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010427441-Red-Red-1000010427441_01-2100.jpg",price:1119,productName:"COLOUR ME Women Printed Ethnic A-Line Dress",discount: 240,size:"s",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010425312-Blue-Teal-1000010425312_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Straight Kurta",discount: 240,size:"m",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011023003-Pink-Pink-1000011023003_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Round Neck A-Line Kurta",discount: 520,size:"s",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010130875-White-White-1000010130875_01-2100.jpg",price:949,productName:"SPAN Women Printed Three-quarter Sleeves A-line Kurta",discount: 450,size:"x",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009401546-Blue-Navy-1000009401546_01-2100.jpg",price:524,productName:"AURELIA Women Yoke Design Straight Kurta", discount: 520,size:"s",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010544211-Blue-Navy-1000010544211_01-2100.jpg",price:654,productName:"MELANGE Women Printed Band Collar Kurta",discount: 50,size:"x",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010024886-Pink-Pink-1000010024886_01-2100.jpg",price:1744,productName:"MELANGE Women Printed Kurta with Straight Pants",discount:50,size:"l",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010784074-White-Offwhite-1000010784074_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered V-Neck Straight Kurta",discount: 570,size:"xl",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010427441-Red-Red-1000010427441_01-2100.jpg",price:1119,productName:"COLOUR ME Women Printed Ethnic A-Line Dress",discount: 240,size:"s",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010425312-Blue-Teal-1000010425312_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Straight Kurta",discount: 240,size:"m",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011023003-Pink-Pink-1000011023003_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Round Neck A-Line Kurta",discount: 520,size:"s",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010130875-White-White-1000010130875_01-2100.jpg",price:949,productName:"SPAN Women Printed Three-quarter Sleeves A-line Kurta",discount: 450,size:"x",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009401546-Blue-Navy-1000009401546_01-2100.jpg",price:524,productName:"AURELIA Women Yoke Design Straight Kurta", discount: 520,size:"s",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010544211-Blue-Navy-1000010544211_01-2100.jpg",price:654,productName:"MELANGE Women Printed Band Collar Kurta",discount: 50,size:"x",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010024886-Pink-Pink-1000010024886_01-2100.jpg",price:1744,productName:"MELANGE Women Printed Kurta with Straight Pants",discount:50,size:"l",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010784074-White-Offwhite-1000010784074_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered V-Neck Straight Kurta",discount: 570,size:"xl",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010427441-Red-Red-1000010427441_01-2100.jpg",price:1119,productName:"COLOUR ME Women Printed Ethnic A-Line Dress",discount: 240,size:"s",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010425312-Blue-Teal-1000010425312_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Straight Kurta",discount: 240,size:"m",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011023003-Pink-Pink-1000011023003_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Round Neck A-Line Kurta",discount: 520,size:"s",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010130875-White-White-1000010130875_01-2100.jpg",price:949,productName:"SPAN Women Printed Three-quarter Sleeves A-line Kurta",discount: 450,size:"x",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009401546-Blue-Navy-1000009401546_01-2100.jpg",price:524,productName:"AURELIA Women Yoke Design Straight Kurta", discount: 520,size:"s",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010544211-Blue-Navy-1000010544211_01-2100.jpg",price:654,productName:"MELANGE Women Printed Band Collar Kurta",discount: 50,size:"x",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010024886-Pink-Pink-1000010024886_01-2100.jpg",price:1744,productName:"MELANGE Women Printed Kurta with Straight Pants",discount:50,size:"l",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010784074-White-Offwhite-1000010784074_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered V-Neck Straight Kurta",discount: 570,size:"xl",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010427441-Red-Red-1000010427441_01-2100.jpg",price:1119,productName:"COLOUR ME Women Printed Ethnic A-Line Dress",discount: 240,size:"s",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010425312-Blue-Teal-1000010425312_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Straight Kurta",discount: 240,size:"m",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011023003-Pink-Pink-1000011023003_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Round Neck A-Line Kurta",discount: 520,size:"s",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010130875-White-White-1000010130875_01-2100.jpg",price:949,productName:"SPAN Women Printed Three-quarter Sleeves A-line Kurta",discount: 450,size:"x",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009401546-Blue-Navy-1000009401546_01-2100.jpg",price:524,productName:"AURELIA Women Yoke Design Straight Kurta", discount: 520,size:"s",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010544211-Blue-Navy-1000010544211_01-2100.jpg",price:654,productName:"MELANGE Women Printed Band Collar Kurta",discount: 50,size:"x",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010024886-Pink-Pink-1000010024886_01-2100.jpg",price:1744,productName:"MELANGE Women Printed Kurta with Straight Pants",discount:50,size:"l",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010784074-White-Offwhite-1000010784074_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered V-Neck Straight Kurta",discount: 570,size:"xl",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010427441-Red-Red-1000010427441_01-2100.jpg",price:1119,productName:"COLOUR ME Women Printed Ethnic A-Line Dress",discount: 240,size:"s",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010425312-Blue-Teal-1000010425312_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Straight Kurta",discount: 240,size:"m",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011023003-Pink-Pink-1000011023003_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Round Neck A-Line Kurta",discount: 520,size:"s",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010130875-White-White-1000010130875_01-2100.jpg",price:949,productName:"SPAN Women Printed Three-quarter Sleeves A-line Kurta",discount: 450,size:"x",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000009401546-Blue-Navy-1000009401546_01-2100.jpg",price:524,productName:"AURELIA Women Yoke Design Straight Kurta", discount: 520,size:"s",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010544211-Blue-Navy-1000010544211_01-2100.jpg",price:654,productName:"MELANGE Women Printed Band Collar Kurta",discount: 50,size:"x",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010024886-Pink-Pink-1000010024886_01-2100.jpg",price:1744,productName:"MELANGE Women Printed Kurta with Straight Pants",discount:50,size:"l",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010784074-White-Offwhite-1000010784074_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered V-Neck Straight Kurta",discount: 570,size:"xl",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010427441-Red-Red-1000010427441_01-2100.jpg",price:1119,productName:"COLOUR ME Women Printed Ethnic A-Line Dress",discount: 240,size:"s",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010425312-Blue-Teal-1000010425312_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Straight Kurta",discount: 240,size:"m",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000011023003-Pink-Pink-1000011023003_01-2100.jpg",price:909,productName:"MELANGE Women Embroidered Round Neck A-Line Kurta",discount: 520,size:"s",color:"red",},
+{img:"https://lmsin.net/cdn-cgi/image/h=831,w=615,q=60,fit=cover/https://aaeff43fe32172cbcecc-ae2a4e9a8cbc330ede5588dedf56886e.lmsin.net/lifestyle/1000010130875-White-White-1000010130875_01-2100.jpg",price:949,productName:"SPAN Women Printed Three-quarter Sleeves A-line Kurta",discount: 450,size:"x",color:"red",},
+
+];
+  // var x=localStorage.setItem("basket",JSON.stringify(Wdata));
+  var basketArr = JSON.parse(localStorage.getItem("products")) || [];
   function append(data) {
     data.forEach(function (el) {
       let img = document.createElement("img");
       img.src = el.img;
 
       let price = document.createElement("p");
-      price.innerText = '₹'+el.price;
+      price.innerText ="₹"+ el.price;
+      price.setAttribute('id','price')
 
-      let productName = document.createElement("p");
-      productName = el.productName;
+      let productName = document.createElement("h4");
+      productName.innerText = el.productName;
+      productName.setAttribute('id','name')
+      //console.log(productName.innerText)
 
       let selectDiv = document.createElement("div");
       selectDiv.setAttribute("id", "selectDiv");
+
       let colorDiv = document.createElement("div");
       let sizeDiv = document.createElement("div");
 
       let selectColor = document.createElement("select");
       let colorOption1 = document.createElement("option");
-      colorOption1.innerText = "red";
+      colorOption1.innerText = "Red";
       colorOption1.innerText = "Pink";
       let colorOption2 = document.createElement("option");
       colorOption2.innerText = "Black";
@@ -183,6 +226,7 @@
       });
 
       let hiddenDiv = document.createElement("div");
+      
       hiddenDiv.append(selectDiv, button);
       hiddenDiv.setAttribute("class", "hiddenDiv");
 
@@ -198,4 +242,93 @@
     console.log(el);
   };
   append(Wdata);
+
+
+
+
+  // Sort Panel
+  let sortingPanel = document.getElementById("sortingPanel");
+let priceWiseSorting = document.createElement("select");
+
+
+let defaultOption = document.createElement("option");
+defaultOption.innerText = "Sort By Price";
+let highToLow = document.createElement("option");
+highToLow.innerText = "High to Low";
+
+let lowToHigh = document.createElement("option");
+lowToHigh.innerText = "Low to High";
+priceWiseSorting.append(defaultOption, highToLow, lowToHigh);
+
+
+
+priceWiseSorting.addEventListener("change", function (event) {
+  sortData(event.target.value);
+});
+
+sortingPanel.append(priceWiseSorting);
+//<-----------------------------Sort by price------------------->
+function sortData(data){
+  document.getElementById('container').innerHTML=''
+  let price=document.getElementById('price')
+  if(data==='High to Low'){
+    Wdata.sort(function(a,b){
+      return b.price-a.price
+    });
+    console.log(Wdata)
+    append(Wdata);
+    
+  }
+  if(data=='Low to High'){
+    Wdata.sort(function(a,b){
+      return a.price-b.price
+    })
+    append(Wdata);
+  }
+
+
+}
+
+// Sort by name
+
+// let sortbyname=document.createElement('select')
+
+// let defaultOption1=document.createElement('option')
+// defaultOption1.innerText='Sort By Name';
+// let AtoZ=document.createElement('option')
+// AtoZ.innerText='A To Z';
+// let ZtoA=document.createElement('option')
+// ZtoA.innerText='Z To A'
+// sortbyname.append(defaultOption1,AtoZ,ZtoA)
+
+// sortbyname.addEventListener('change',function(event){
+//   sortbyN(event.target.value)
+// })
+
+// sortingPanel.append(sortbyname);
+
+
+// function sortbyN(name){
+//   document.getElementById('container').innerHTML=''
+//   let Pname=document.getElementById('name');
+//   if(name==='A To Z'){
+//     Pname.sort(function (a,b){
+//       var x=a.name.toUpperCase();
+//        var y=b.name.toUpperCase();
+//        if(x>y){
+//          return 1
+//        }
+//        if(x<y){
+//          return -1
+//        }
+//        return 0 
+//     })
+//     append(Wdata);
+//   }
+// }
+
+
+
+
+
 </script>
