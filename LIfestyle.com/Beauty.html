@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beauty</title>
+    <link
+      rel="shortcut icon"
+      sizes="152x152"
+      href="https://i1.lmsin.net/website_images/in/favicons/lifestyle/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="sliding.css" />
+    <link rel="stylesheet" href="./common.css" />
+  </head>
+  <style>
+    #trending,
+    #Top,
+    #ethnic,
+    #range,
+    #best,
+    #must,
+    #love {
+      gap: 1rem;
+    }
+  </style>
+  <body>
+    <div id="container">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/HP_LS_Beauty_Desktop-1-15June2022.jpg"
+              alt="1"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/HP_LS_Beauty_Desktop-2-15June2022.jpg"
+              alt="2"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/HP_LS_Beauty_Desktop-3-15June2022.jpg"
+              alt="3"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/HP_LS_Beauty_Desktop-4-15June2022.jpg"
+              alt="4"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/LS-Banner5-desktop-Women-15June2022.jpg"
+              alt="5"
+            />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <!-- sliding HTML end here -->
+
+    <!-- now we are making shop by category -->
+
+    <div id="cat-con">
+      <h1>Shop By Category</h1>
+      <div id="cat"></div>
+    </div>
+    <!-- end category -->
+
+    <div id="trend-con">
+      <h1>Top Trending Brands</h1>
+      <div id="trending"></div>
+    </div>
+
+    <!-- Summer Essentials -->
+
+    <div id="trend-con">
+      <h1></h1>
+      <div id="summer"></div>
+    </div>
+
+    <!-- L'Oreal MayBelle new york banner -->
+
+    <div id="trend-con">
+      <div id="flash">
+        <img
+          src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-5modblock-oneBytwo1-C-beauty-13May2022.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- Lush Lips Offers -->
+    <div id="trend-con">
+      <h1>Lush Lips Offers</h1>
+      <div id="first"></div>
+    </div>
+
+    <!-- Beauty Essentials -->
+    <div id="trend-con">
+      <h1>Beauty Essentials</h1>
+      <div id="Top"></div>
+    </div>
+
+    <div id="trend-con">
+      <h1>Budget Corner</h1>
+      <div id="love"></div>
+    </div>
+
+    <!-- First Time on Discount -->
+
+    <div id="trend-con">
+      <h1>Top picks of the season</h1>
+      <div id="ethnic"></div>
+    </div>
+
+    <!--Luxury Collection -->
+    <div id="trend-con">
+      <h1>Luxury Collection</h1>
+      <div id="must"></div>
+    </div>
+
+    <!-- Skin Essentials -->
+
+    <div id="trend-con">
+      <h1>Skin Essentials</h1>
+      <div id="range"></div>
+    </div>
+
+    <!-- Flash Sale For Today -->
+
+    <!-- Beauty Trendsr -->
+
+    <div id="trend-con">
+      <h1>Beauty Trends</h1>
+      <div id="best"></div>
+    </div>
+  </body>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="slide.js"></script>
+</html>
+<script>
+  let cat_data = [
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-1-Desktop-Beauty-11April2022.jpg",
+      cat_name: "Face",
+    },
+
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-2-Desktop-Beauty-11April2022.jpg",
+      cat_name: "Lips",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-3-Desktop-Beauty-11April2022.jpg",
+      cat_name: "Eyes",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-4-Desktop-Beauty-11April2022.jpg",
+      cat_name: "Nails",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-5-Desktop-Beauty-11April2022.jpg",
+      cat_name: "Skincare",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-6-Desktop-Beauty-12May2022.jpg",
+      cat_name: "Fragrances",
+    },
+  ];
+
+  category(cat_data);
+
+  function category(data) {
+    let big = document.getElementById("cat");
+    console.log(data);
+    data.forEach((el) => {
+      let box = document.createElement("div");
+      let img = document.createElement("img");
+      img.src = el.img;
+      let p = document.createElement("p");
+      p.innerText = el.cat_name;
+
+      box.append(img, p);
+      box.style.cursor = "pointer";
+
+      big.append(box);
+    });
+  }
+
+  // Trending JS
+  let trend_data = [
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-B-1-Beauty-Desktop-11April2022.jpg",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-B-2-Beauty-Desktop-16March2022.jpg",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-B-3-Beauty-Desktop-16March2022.jpg",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-B-4-Beauty-Desktop-16March2022.jpg",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-B-5-Beauty-Desktop-16March2022.jpg",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-B-6-Beauty-Desktop-16March2022.jpg",
+    },
+  ];
+
+  trend(trend_data);
+
+  function trend(data) {
+    let big = document.getElementById("trending");
+    console.log(data);
+    data.forEach((el) => {
+      let box = document.createElement("div");
+      let img = document.createElement("img");
+      img.src = el.img;
+
+      box.append(img);
+      box.style.cursor = "pointer";
+
+      big.append(box);
+    });
+  }
+
+  //summer
+  let summer_data = [
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-10modblock-oneBythree-A-Beauty-13June2022.jpg",
+    },
+  ];
+
+  summer(summer_data);
+
+  function summer(data) {
+    let big = document.getElementById("summer");
+    console.log(data);
+    data.forEach((el) => {
+      let box = document.createElement("div");
+      let img = document.createElement("img");
+      img.src = el.img;
+
+      box.append(img);
+      box.style.cursor = "pointer";
+
+      big.append(box);
+    });
+  }
+
+  // Top Trendieeee's
+  let top_data = [
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modblock-oneBythree-D-12April2022.jpg",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modblock-oneBythree-E-16March2022.jpg",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modblock-oneBythree-F-16March2022.jpg",
+    },
+  ];
+
+  Top(top_data);
+
+  function Top(data) {
+    let big = document.getElementById("Top");
+    console.log(data);
+    data.forEach((el) => {
+      let box = document.createElement("div");
+      let img = document.createElement("img");
+      img.src = el.img;
+
+      box.append(img);
+      box.style.cursor = "pointer";
+
+      big.append(box);
+    });
+  }
+  // Essentials For You
+
+  let eth_data = [
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modularblock-oneBythree-A-16March2022.jpg",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modularblock-oneBythree-B-31March2022.jpg",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modularblock-oneBythree-C-16March2022.jpg",
+    },
+  ];
+
+  Ethnic(eth_data);
+
+  function Ethnic(data) {
+    let big = document.getElementById("ethnic");
+    console.log(data);
+    data.forEach((el) => {
+      let box = document.createElement("div");
+      let img = document.createElement("img");
+      img.src = el.img;
+
+      box.append(img);
+      box.style.cursor = "pointer";
+
+      big.append(box);
+    });
+  }
+
+  // Highlights of the Day
+  let range_data = [
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-8modblock-oneBythree-A-Beauty-12April2022.jpg",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-8modblock-oneBythree-B-Beauty-17March2022.jpg",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-8modblock-oneBythree-C-Beauty-17March2022.jpg",
+    },
+  ];
+
+  range(range_data);
+
+  function range(data) {
+    let big = document.getElementById("range");
+    console.log(data);
+    data.forEach((el) => {
+      let box = document.createElement("div");
+      let img = document.createElement("img");
+      img.src = el.img;
+
+      box.append(img);
+      box.style.cursor = "pointer";
+
+      big.append(box);
+    });
+  }
+
+  //Lush Lips Offers
+
+  let first_data = [
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-D-1-Beauty-Desktop-05May2022.jpg",
+      cat_name: "",
+    },
+
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-D-2-Beauty-Desktop-05May2022.jpg",
+      cat_name: "",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-D-3-Beauty-Desktop-05May2022.jpg",
+      cat_name: "",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-D-4-Beauty-Desktop-05May2022.jpg",
+      cat_name: "",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-D-5-Beauty-Desktop-20Mar2022.jpg",
+      cat_name: "",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=288,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/PC-D-6-Beauty-Desktop-08April2022.jpg",
+      cat_name: "",
+    },
+  ];
+
+  first(first_data);
+
+  function first(data) {
+    let big = document.getElementById("first");
+    console.log(data);
+    data.forEach((el) => {
+      let box = document.createElement("div");
+      let img = document.createElement("img");
+      img.src = el.img;
+      let p = document.createElement("p");
+      p.innerText = el.cat_name;
+
+      box.append(img, p);
+      box.style.cursor = "pointer";
+
+      big.append(box);
+    });
+  }
+
+  //New, Cool & Trendy
+
+  let must_data = [
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-6modblk-oneBythree-A-Beauty-13May2022.jpg",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-6modblk-oneBythree-B-Beauty-17March2022.jpg",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-6modblk-oneBythree-C-Beauty-17March2022.jpg",
+    },
+  ];
+
+  Must(must_data);
+
+  function Must(data) {
+    let big = document.getElementById("must");
+    console.log(data);
+    data.forEach((el) => {
+      let box = document.createElement("div");
+      let img = document.createElement("img");
+      img.src = el.img;
+
+      box.append(img);
+      box.style.cursor = "pointer";
+
+      big.append(box);
+    });
+  }
+
+  //MOst loved Styles
+  let love_data = [
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-13modblock-oneBythree-A-Beauty-12April2022.jpg",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-13modblock-oneBythree-B-Beauty-16March2022.jpg",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-13modblock-oneBythree-C-Beauty-16March2022.jpg",
+    },
+  ];
+
+  love(love_data);
+
+  function love(data) {
+    let big = document.getElementById("love");
+    console.log(data);
+    data.forEach((el) => {
+      let box = document.createElement("div");
+      let img = document.createElement("img");
+      img.src = el.img;
+
+      box.append(img);
+      box.style.cursor = "pointer";
+
+      big.append(box);
+    });
+  }
+
+  //Fashion Favourites
+  let best_data = [
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-14modularblock-oneBythree-A-Beauty-17March2022.jpg",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-14modularblock-oneBythree-B-Beauty-17March2022.jpg",
+    },
+    {
+      img: "https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-14modularblock-oneBythree-C-Beauty-17March2022.jpg",
+    },
+  ];
+
+  best(best_data);
+
+  function best(data) {
+    let big = document.getElementById("best");
+    console.log(data);
+    data.forEach((el) => {
+      let box = document.createElement("div");
+      let img = document.createElement("img");
+      img.src = el.img;
+
+      box.append(img);
+      box.style.cursor = "pointer";
+
+      big.append(box);
+    });
+  }
+</script>
