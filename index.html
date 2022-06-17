@@ -10,29 +10,1887 @@
 <link rel="stylesheet" href="index.css" />
 <link rel="stylesheet" href="nav_and_footer.css" />
 <body>
-    <div id="top-bar">
-        <div>
-            <div class="top_div">
-               <P> <i class="fa-solid fa-truck-fast"></i>Free Shipping</p>
-                <p><i class="fa-solid fa-store"></i>Click & Collect</p>
-                <p><i class="fa-solid fa-store"></i>Return To Store</p>
-            </div>
-        <div class="top_div">
-            <p>Download Our Apps</p>
-            <p>|</p>
-            <p>Store Locator</p>
-            <p>|</p>
-            <p>Help</p>
-        </div>
-        </div>
+  <div id="top-bar">
+    <div>
+      <div class="top_div">
+        <p><i class="fa-solid fa-truck-fast"></i>Free Shipping</p>
+        <p><i class="fa-solid fa-store"></i>Click & Collect</p>
+        <p><i class="fa-solid fa-store"></i>Return To Store</p>
+      </div>
+      <div class="top_div">
+        <p><a href="https://www.lifestylestores.com/in/en/apps">Download Our Apps</a></p>
+        <p>|</p>
+        <p>Store Locator</p>
+        <p>|</p>
+        <p>Help</p>
+      </div>
     </div>
+  </div>
 
+  <div id="navbar">
+    <div>
+      <ul class="main-list">
+        <li id="home-logo"><a href="index.html"><img src="data:image/png;base64,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" alt=""></a></li>
+        <li class="nav-list">
+          <a href="#">Women</a>
+          <div class="sub-list">
+            <ul>
+              <li class="nav-list-types">
+                <a href="">Ethinic</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Ethnic & Fusion Wear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Kurtas & Kurtis</li>
+                          <li>Ethnic Sets</li>
+                          <li>Ethnic Dresses</li>
+                          <li>Tops & Tunics</li>
+                          <li>Leggings</li>
+                          <li>Pants & Palazzos</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner1-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner2-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner3-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner4-22Nov2021.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <!--copy end-->
+              </li>
 
-    <div id="navbar">
-        <div></div>
+              <li class="nav-list-types">
+                <a href="">Estern</a>
+                <div class="sub-sub-list">
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Ethnic & Fusion Wear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Kurtas & Kurtis</li>
+                          <li>Ethnic Sets</li>
+                          <li>Ethnic Dresses</li>
+                          <li>Tops & Tunics</li>
+                          <li>Leggings</li>
+                          <li>Pants & Palazzos</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat2-Banner1-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat2-Banner2-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat2-Banner3-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat2-Banner4-22Nov2021.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-list-types">
+                <a href="">Lingeri/Sleepwear</a>
+                <div class="sub-sub-list">
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Ethnic & Fusion Wear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Kurtas & Kurtis</li>
+                          <li>Ethnic Sets</li>
+                          <li>Ethnic Dresses</li>
+                          <li>Tops & Tunics</li>
+                          <li>Leggings</li>
+                          <li>Pants & Palazzos</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat3-Banner1-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner2-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat3-Banner2-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat3-Banner4-22Nov2021.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-list-types">
+                <a href="">top Brand</a>
+                <div class="sub-sub-list">
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Ethnic & Fusion Wear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Kurtas & Kurtis</li>
+                          <li>Ethnic Sets</li>
+                          <li>Ethnic Dresses</li>
+                          <li>Tops & Tunics</li>
+                          <li>Leggings</li>
+                          <li>Pants & Palazzos</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat4-Banner1-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat4-Banner2-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat4-Banner3-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat4-Banner4-22Nov2021.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-list-types">
+                <a href="">Sports</a>
+                <div class="sub-sub-list">
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Ethnic & Fusion Wear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Kurtas & Kurtis</li>
+                          <li>Ethnic Sets</li>
+                          <li>Ethnic Dresses</li>
+                          <li>Tops & Tunics</li>
+                          <li>Leggings</li>
+                          <li>Pants & Palazzos</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat5-Banner1-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat5-Banner2-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat5-Banner3-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat5-Banner4-22Nov2021.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-list-types">
+                <a href="">Plus Size</a>
+                <div class="sub-sub-list">
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Ethnic & Fusion Wear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Kurtas & Kurtis</li>
+                          <li>Ethnic Sets</li>
+                          <li>Ethnic Dresses</li>
+                          <li>Tops & Tunics</li>
+                          <li>Leggings</li>
+                          <li>Pants & Palazzos</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat6-Banner1-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat6-Banner2-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner3-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner4-22Nov2021.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-list-types">
+                <a href="">Winter</a>
+                <div class="sub-sub-list">
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Ethnic & Fusion Wear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Kurtas & Kurtis</li>
+                          <li>Ethnic Sets</li>
+                          <li>Ethnic Dresses</li>
+                          <li>Tops & Tunics</li>
+                          <li>Leggings</li>
+                          <li>Pants & Palazzos</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner1-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner2-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner3-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner4-22Nov2021.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-list-types">
+                <a href="">Size</a>
+                <div class="sub-sub-list">
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Ethnic & Fusion Wear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Kurtas & Kurtis</li>
+                          <li>Ethnic Sets</li>
+                          <li>Ethnic Dresses</li>
+                          <li>Tops & Tunics</li>
+                          <li>Leggings</li>
+                          <li>Pants & Palazzos</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat8-Banner1-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner2-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner3-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner4-22Nov2021.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-list-types">
+                <a href="">Beauty</a>
+                <div class="sub-sub-list">
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Ethnic & Fusion Wear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Kurtas & Kurtis</li>
+                          <li>Ethnic Sets</li>
+                          <li>Ethnic Dresses</li>
+                          <li>Tops & Tunics</li>
+                          <li>Leggings</li>
+                          <li>Pants & Palazzos</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <!-- <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner1-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner2-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner3-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner4-22Nov2021.jpg"
+                        alt=""
+                      /> -->
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-list-types">
+                <a href="">Foot</a>
+                <div class="sub-sub-list">
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Ethnic & Fusion Wear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Kurtas & Kurtis</li>
+                          <li>Ethnic Sets</li>
+                          <li>Ethnic Dresses</li>
+                          <li>Tops & Tunics</li>
+                          <li>Leggings</li>
+                          <li>Pants & Palazzos</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <!-- <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner1-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner2-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner3-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner4-22Nov2021.jpg"
+                        alt=""
+                      /> -->
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-list-types">
+                <a href="">Watch</a>
+                <div class="sub-sub-list">
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Ethnic & Fusion Wear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Kurtas & Kurtis</li>
+                          <li>Ethnic Sets</li>
+                          <li>Ethnic Dresses</li>
+                          <li>Tops & Tunics</li>
+                          <li>Leggings</li>
+                          <li>Pants & Palazzos</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <!-- <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner1-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner2-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner3-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner4-22Nov2021.jpg"
+                        alt=""
+                      /> -->
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-list-types">
+                <a href="">jwelery</a>
+                <div class="sub-sub-list">
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Ethnic & Fusion Wear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Kurtas & Kurtis</li>
+                          <li>Ethnic Sets</li>
+                          <li>Ethnic Dresses</li>
+                          <li>Tops & Tunics</li>
+                          <li>Leggings</li>
+                          <li>Pants & Palazzos</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <!-- <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner1-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner2-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner3-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner4-22Nov2021.jpg"
+                        alt=""
+                      /> -->
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-list-types">
+                <a href="">More</a>
+                <div class="sub-sub-list">
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Ethnic & Fusion Wear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Kurtas & Kurtis</li>
+                          <li>Ethnic Sets</li>
+                          <li>Ethnic Dresses</li>
+                          <li>Tops & Tunics</li>
+                          <li>Leggings</li>
+                          <li>Pants & Palazzos</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner1-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner2-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner3-22Nov2021.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Women-Cat1-Banner4-22Nov2021.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-list men">
+          <a href=""> Men</a>
+          <div class="sub-list">
+            <ul>
+              <li class="nav-list-types"><a href="">Topwear</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop2-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop3-21Sept2020.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div>
+                <!-- end -->
+              </li>
+              <li class="nav-list-types"><a href="">Bottomwear</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop2-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop3-21Sept2020.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-list-types"><a href="">Activewear</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop2-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop3-21Sept2020.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Ethnic</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop2-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop3-21Sept2020.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Winterwear</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop2-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop3-21Sept2020.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Innerwear</a>
+              
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop2-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop3-21Sept2020.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Top Brands</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop2-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop3-21Sept2020.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-list-types"><a href="">Watches</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop2-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop3-21Sept2020.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Sunglasses</a>
+              
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop2-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop3-21Sept2020.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Shoes</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop2-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop3-21Sept2020.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Gromming</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop2-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop3-21Sept2020.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">More</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop2-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop3-21Sept2020.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-list kids">
+          <a href=""> Kids</a>
+          <div class="sub-list">
+            <ul>
+              <li class="nav-list-types"><a href="">Boys</a> <div class="sub-sub-list">
+                <!--copy start-->
+                <div class="sub-sub-listContainer">
+                  <div class="sub-sub-listCategory">
+                    <h3>Shop in Topwear</h3>
+                    <div class="categoryList1">
+                      <ul>
+                        <li>Casual Shirts</li>
+                        <li>Formal Shirts</li>
+                        <li>Polos</li>
+                        <li>T-shirt</li>
+                        <li>Jackets</li>
+                        <li>Hoodies and SwetShirts</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sub-sub-listImages">
+                    <img
+                      src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop1-21Sept2020.jpg"
+                      alt=""
+                    />
+                    <img
+                      src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop2-21Sept2020.jpg"
+                      alt=""
+                    />
+                    <img
+                      src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Mens-Teesandtops-Desktop3-21Sept2020.jpg"
+                      alt=""
+                    />
+                   
+                  </div>
+                </div>
+              </div></li>
+              <li class="nav-list-types"><a href="">Girls</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-BoysClothing-Banner4-09Feb2022.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-GirlsClothing-Banner4-09Feb2022.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-Agestore-Banner3-09Feb2022.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div> </li>
+              <li class="nav-list-types"><a href="">Top Brands</a>
+              
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-BoysClothing-Banner4-09Feb2022.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-GirlsClothing-Banner4-09Feb2022.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-Agestore-Banner3-09Feb2022.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Accessories</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-BoysClothing-Banner4-09Feb2022.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-GirlsClothing-Banner4-09Feb2022.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-Agestore-Banner3-09Feb2022.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Price Point Store</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-BoysClothing-Banner4-09Feb2022.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-GirlsClothing-Banner4-09Feb2022.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-Agestore-Banner3-09Feb2022.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Age Store</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-BoysClothing-Banner4-09Feb2022.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-GirlsClothing-Banner4-09Feb2022.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-Agestore-Banner3-09Feb2022.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Boys FootWear</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-BoysClothing-Banner4-09Feb2022.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-GirlsClothing-Banner4-09Feb2022.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-Agestore-Banner3-09Feb2022.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Girls Footwear</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-BoysClothing-Banner4-09Feb2022.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-GirlsClothing-Banner4-09Feb2022.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-Agestore-Banner3-09Feb2022.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Charater Shop</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-BoysClothing-Banner4-09Feb2022.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-GirlsClothing-Banner4-09Feb2022.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-Agestore-Banner3-09Feb2022.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Offer</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-BoysClothing-Banner4-09Feb2022.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-GirlsClothing-Banner4-09Feb2022.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-Agestore-Banner3-09Feb2022.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">More</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-BoysClothing-Banner4-09Feb2022.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-GirlsClothing-Banner4-09Feb2022.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Kids-Agestore-Banner3-09Feb2022.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-list shoes">
+          <a href=""> Shoes and Bags</a>
+          <div class="sub-list">
+            <ul>
+              <li class="nav-list-types"><a href="">Women</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Mens-Desktop3-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Women-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Access-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Men</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Mens-Desktop3-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Women-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Access-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Boys</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Mens-Desktop3-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Women-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Access-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Girls</a><div class="sub-sub-list">
+                <!--copy start-->
+                <div class="sub-sub-listContainer">
+                  <div class="sub-sub-listCategory">
+                    <h3>Shop in Topwear</h3>
+                    <div class="categoryList1">
+                      <ul>
+                        <li>Casual Shirts</li>
+                        <li>Formal Shirts</li>
+                        <li>Polos</li>
+                        <li>T-shirt</li>
+                        <li>Jackets</li>
+                        <li>Hoodies and SwetShirts</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sub-sub-listImages">
+                    <img
+                      src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Mens-Desktop3-21Sept2020.jpg"
+                      alt=""
+                    />
+                    <img
+                      src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Women-Desktop1-21Sept2020.jpg"
+                      alt=""
+                    />
+                    <img
+                      src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Access-Desktop1-21Sept2020.jpg"
+                      alt=""
+                    />
+                   
+                  </div>
+                </div>
+              </div></li>
+              <li class="nav-list-types"><a href="">WomenAccessories</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Mens-Desktop3-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Women-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Access-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Essentials</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Mens-Desktop3-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Women-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Access-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Price Store</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Mens-Desktop3-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Women-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Access-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">More</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop in Topwear</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Casual Shirts</li>
+                          <li>Formal Shirts</li>
+                          <li>Polos</li>
+                          <li>T-shirt</li>
+                          <li>Jackets</li>
+                          <li>Hoodies and SwetShirts</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Mens-Desktop3-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Women-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                      <img
+                        src="https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/Flyout-Shoeandbags-Access-Desktop1-21Sept2020.jpg"
+                        alt=""
+                      />
+                     
+                    </div>
+                  </div>
+                </div></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-list beauty">
+          <a href=""> Beauty</a>
+          <div class="sub-list">
+            <ul>
+              <li class="nav-list-types"><a href="">Lips</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop BeautiProduct</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Lipstick</li>
+                          <li>Lip liner</li>
+                          <li>Lip glos</li>
+                          <li>Eye liner</li>
+                          <li>Mascara</li>
+                          <li>Cream</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Face</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop BeautiProduct</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Lipstick</li>
+                          <li>Lip liner</li>
+                          <li>Lip glos</li>
+                          <li>Eye liner</li>
+                          <li>Mascara</li>
+                          <li>Cream</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Eyes</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop BeautiProduct</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Lipstick</li>
+                          <li>Lip liner</li>
+                          <li>Lip glos</li>
+                          <li>Eye liner</li>
+                          <li>Mascara</li>
+                          <li>Cream</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Nails</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop BeautiProduct</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Lipstick</li>
+                          <li>Lip liner</li>
+                          <li>Lip glos</li>
+                          <li>Eye liner</li>
+                          <li>Mascara</li>
+                          <li>Cream</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Skin Care</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop BeautiProduct</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Lipstick</li>
+                          <li>Lip liner</li>
+                          <li>Lip glos</li>
+                          <li>Eye liner</li>
+                          <li>Mascara</li>
+                          <li>Cream</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Bath & Body</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop BeautiProduct</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Lipstick</li>
+                          <li>Lip liner</li>
+                          <li>Lip glos</li>
+                          <li>Eye liner</li>
+                          <li>Mascara</li>
+                          <li>Cream</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Fragrance</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop BeautiProduct</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Lipstick</li>
+                          <li>Lip liner</li>
+                          <li>Lip glos</li>
+                          <li>Eye liner</li>
+                          <li>Mascara</li>
+                          <li>Cream</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types">
+                <a href="">Tools & Accessories</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop BeautiProduct</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Lipstick</li>
+                          <li>Lip liner</li>
+                          <li>Lip glos</li>
+                          <li>Eye liner</li>
+                          <li>Mascara</li>
+                          <li>Cream</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+
+                     
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-list-types"><a href="">Men Grooming</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop BeautiProduct</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Lipstick</li>
+                          <li>Lip liner</li>
+                          <li>Lip glos</li>
+                          <li>Eye liner</li>
+                          <li>Mascara</li>
+                          <li>Cream</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">Essentials</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop BeautiProduct</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Lipstick</li>
+                          <li>Lip liner</li>
+                          <li>Lip glos</li>
+                          <li>Eye liner</li>
+                          <li>Mascara</li>
+                          <li>Cream</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+
+                     
+                    </div>
+                  </div>
+                </div></li>
+              <li class="nav-list-types"><a href="">More</a>
+                <div class="sub-sub-list">
+                  <!--copy start-->
+                  <div class="sub-sub-listContainer">
+                    <div class="sub-sub-listCategory">
+                      <h3>Shop BeautiProduct</h3>
+                      <div class="categoryList1">
+                        <ul>
+                          <li>Lipstick</li>
+                          <li>Lip liner</li>
+                          <li>Lip glos</li>
+                          <li>Eye liner</li>
+                          <li>Mascara</li>
+                          <li>Cream</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sub-sub-listImages">
+
+                     
+                    </div>
+                  </div>
+                </div></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <input
+            type="search"
+            placeholder="What are you looking for"
+            id="search"
+          />
+        </li>
+        <li>SignUp-SignIn</li>
+        <li>Basket</li>
+      </ul>
     </div>
+  </div>
 
-    <div id="types"></div>
+  <div id="types"></div>
 
     <div id="offfer">Landmark Rewards Members Exclusive - Shop for $2999 $ get extra 20% off | Use coupon: WED20</div>
     <!-- End of Nav Bar -->
@@ -42,86 +1900,86 @@
     <div id="category">
         <div><h2>Shop By category</h2></div>
         <div>
-        <div class="cat-type"><img src="https://cdn2.stylecraze.com/wp-content/uploads/2013/01/10-Lakm%C3%A9-Products-For-Oily-Skin-To-Try-In-2019.jpg" alt=""><p>Face</p></div>
-        <div class="cat-type"><img src="https://www.maybelline.co.in/~/media/mny/en_in/makeup%20tips/article/lip-makeup/types-of-lipsticks-400.jpg?la=en-in&hash=A722867124E9550E91D3FD45FFDB6ED96E4437BB" alt=""><p>Lips</p></div>
-        <div class="cat-type"><img src="https://img.jakpost.net/c/2016/06/12/2016_06_12_6292_1465712720._large.jpg" alt=""><p>Eyes</p></div>
-        <div class="cat-type"><img src="https://www.onlinedelivery.in/images/detailed/21/2336.jpg" alt=""><p>Nails</p></div>
-        <div class="cat-type"><img src="https://cdn.shopify.com/s/files/1/0014/3514/0183/products/1000x1000_600x.jpg?v=1622817234" alt=""><p>Skin Care</p></div>
-        <div class="cat-type"><img src="https://ustraa.cdn.imgeng.in/media/catalog/product/b/a/base-camp-3-1100x1100.jpg" alt=""><p>Fragrance</p></div>
+        <div class="cat-type" onclick="myContainer()"><img src="https://cdn2.stylecraze.com/wp-content/uploads/2013/01/10-Lakm%C3%A9-Products-For-Oily-Skin-To-Try-In-2019.jpg" alt=""><p>Face</p></div>
+        <div class="cat-type" onclick="myContainer()"><img src="https://www.maybelline.co.in/~/media/mny/en_in/makeup%20tips/article/lip-makeup/types-of-lipsticks-400.jpg?la=en-in&hash=A722867124E9550E91D3FD45FFDB6ED96E4437BB" alt=""><p>Lips</p></div>
+        <div class="cat-type" onclick="myContainer()"><img src="https://img.jakpost.net/c/2016/06/12/2016_06_12_6292_1465712720._large.jpg" alt=""><p>Eyes</p></div>
+        <div class="cat-type" onclick="myContainer()"> <img src="https://www.onlinedelivery.in/images/detailed/21/2336.jpg" alt=""><p>Nails</p></div>
+        <div class="cat-type" onclick="myContainer()"><img src="https://cdn.shopify.com/s/files/1/0014/3514/0183/products/1000x1000_600x.jpg?v=1622817234" alt=""><p>Skin Care</p></div>
+        <div class="cat-type" onclick="myContainer()"><img src="https://ustraa.cdn.imgeng.in/media/catalog/product/b/a/base-camp-3-1100x1100.jpg" alt=""><p>Fragrance</p></div>
         </div>
     </div>
 
-    <!--A line to be add-->
+    
     <div class="TopSellingBrands"><h2>Top Selling Brands</h2></div>
     <div class="tasb">
-        <div class="tsb"><img src="http://peachesandblush.com/wp-content/uploads/2013/02/lakme1.jpg" alt=""></div>
-        <div class="tsb"><img src="https://assets.gadgets360cdn.com/pricee/assets/category/202006/og-banner-maybelline-1200x628_1591353201.jpg" alt=""></div>
-        <div class="tsb"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAwFBMVEUAAAD///+qqah5dnCKiooBAQClpaM9PT3f3Ne4uLjOysX///37+/uin5q9vb3Y2dWRkZEwKR8sLCMhISEpKSlwcGaQjojW1tb29vSenp7h4d9wcHCysrDo5+XPz81KSkp/f30PDw9qamh8fHwaGhthYV/w8PCGhoY/Pz40NDOCgns4OS9JSUlZWVkcGxfKysq/wLgUFQokJSAkJBiqq6XP0Mg/P0FeXVmUlI5eXl4vLio5OjQGCQAUFBSwrrC0ta6NJcOhAAAGnElEQVR4nO2a/0PiNhjGGw5RLEfZgbYUKFAGCKdXd/N2Tk/v//+v1nxr0pJAp3Gy7fn8oGmSpnnImzfJ23oeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8u5pvldnvx+Yub1jaDwebqeuCmMRcsuhERRFlz/ur2zmlL3RsHPXPCpksqJNPXtdgi5DZ10zkX7OhjGnNrPXlpi/dnM4f9ey2pT3wqKetNqXEORmNqr3nW7MVNzv+56TdrNnuG7J6W3WQj1ilVW8Ysc6xljZq7sFmmxvlGlaxL9Xa7wLJH1dx+3q+/a9pneT93c0da74dMS7taZcaG8VxlJCZLJrHe+YaxCjF0YcmznyrZp6aevEhhonJn7FE7v2bufFa04E5cnXDfaCC6Km5p1VbITaRkI04VPuWZH2WbdAoaffqcSUx1hXEYaMQr3s/ibqowHg4/7nBXaXoplVcWJWcKc2uKRHJiGUFKv0MtVVe441qb9PfpyCuqsFunV3H+u046u3KcKYx8cs9TlyZbKRipUq5w10POqdttiYu6Ci/oFL/q0b+/lgpcKUzVEOb986NquSIpLMmm0JsS1VpdhZNcWuJ5vl/V40phRsiWp9ggmVYTwRUtH9KUVSGz8weerKkwpXN/Krx4yZ26Ukj8lUhlaqKZCfIKE5qwK6RtzHiypkL6m4Q0EVXrO1J4VzhIZid7u9SUc8WuMFFmUE9hSoeO7Xp7NNXXihwpbLWfRYoZ4Xrf7QMiRsiukNa4Fi3XUkiHMODJ6iC6W/EFC9q7zd77feEqrQoXmqHXUqiGUGwYteOoc4U903ajzER02qbwwdeWm1adDhazkFIZROcKx4cVBiWF1dLTBnWLpRU/Ckv7nqC62F5oQ8jWY1+bic4VNg4rDEsKO52oIE/T23NnVdq1VQkrDWqzkJJvPshtcfX+VqqgXthnp8rosTg/mRQG5fZGpSEUM7EYxLfwNP4BT0NKnqaKT6J7rTJVmP326ReNh6/l9lZV0aWZ6Fzh4dViI2twhaP0QpK2aVH5uHrYly4qQyhOb/JncK6QrfjZvtuH5RX/d71sUh2OGgrZeWvd0yHaTe4Vdg9NRNojbdf2SS97pOpLm9qDChcGS2fGLja27hUu5TSzwPyCtvMuKeRe4lTLOKhwZVMo7nKvkB+A7dFf6sv57SaFbCmZaNeHFLI516nCnDL3d2+gkA1SYitlRswjEEaF1S3JIYWR+WFRPoh8TXwDhWzPYrNT5gTE6daskFm5ioEcULimta9282d0ENlMfAuFXqeYalV4HFW4drNCjy0ZP+TVAYWWIeTTk8Ut30ThDdNhaJZ1XgYDbArZRI7lxX6Fa7qHNQyh523pkz57L1f4wcRWHlpuWAB/Ugko3qyYjyt2LDaFj/Rm/WwRXBgeNqOldAi/mXtJizKh8Ftq6q49En5G+DuJXf6QVab8rVqoxRQXIa+jsmwK+WRNlUIznn0WsueJ7eOptYGzfQotaA/LRFbSWo9G6wa/9MnkQVWxKuTxOO7s90b16Q9t9dorXnj1AoX3DQvP+mn2u+GHiPh2tFC4ze8xvR2e3+Wt8ek6sj0sN+PpOP93betmyisNxneWFu5td9bme+XoEMxe3eTxkTYStsVZhWN23njx21EAgHtOcl5TDt6b0SUnVYvh9PJSraZPonz2Xeb8OV6K1KbV7o4bR/PVkIWYJFmWZGGkdiQrfXfSJ36W5MTFK6ihPI51SdJ4zrdIK8tm7UgI5YuFtZTVJI2JCpj1i6BvIPan1wte2CB8WL9Ee17CHgGhDBN58hxGVt5IHZmUwpE4+TwN+LvriRS2iI96EHcU3tIjR0wWIlcpzMeW/ZdWGpi/8Tg6QhGvvQ7IjG7lHlnwaVm8vO/LoOmMRNyeeyJm0J+QVdJKK1Hv4yOUm/GYz7KYBxADGfroF7v1rnj/0CuiItPhT/pt0PlRGym10vl8/iS/KEiJfzfOCeSspFY6n/94VDOzV477PFxGx22uYflziYiMx+12e/wckJ8soy/eC/TkZ1ZS4U1PvvT5qr1AO0LKCofCm3jU8TAX1JeLSChHSipUUcp6X0q9F6H+3dKTFrlrcGmFQk86H2ml5zKQFRLr4f4YCHSFGWmqi4jQ3ZlS+MHnH2sW8/Dez53pWUSC4/Y0r2KQXm7/w/IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADA/4y/AHMHZt5/uzrnAAAAAElFTkSuQmCC" alt=""></div>
-        <div class="tsb"><img src="https://www.cosmeticsdesign-asia.com/var/wrbm_gb_food_pharma/storage/images/1/3/7/1/3391731-1-eng-GB/The-Face-Shop-set-to-enter-the-Indian-market.png" alt=""></div>
-        <div class="tsb"><img src="https://images.herzindagi.info/image/2021/May/vineeta-singh-m_g.jpg" alt=""></div>
-        <div class="tsb"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFB3FkXtvmAEBzPaG5-4ws5PnmVcX5LNnsWg&usqp=CAU" alt=""></div>
+        <div class="tsb" onclick="myContainer()"><img src="http://peachesandblush.com/wp-content/uploads/2013/02/lakme1.jpg" alt=""></div>
+        <div class="tsb" onclick="myContainer()"><img src="https://assets.gadgets360cdn.com/pricee/assets/category/202006/og-banner-maybelline-1200x628_1591353201.jpg" alt=""></div>
+        <div class="tsb" onclick="myContainer()"><img src="data:image/png;base64,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" alt=""></div>
+        <div class="tsb" onclick="myContainer()"><img src="https://www.cosmeticsdesign-asia.com/var/wrbm_gb_food_pharma/storage/images/1/3/7/1/3391731-1-eng-GB/The-Face-Shop-set-to-enter-the-Indian-market.png" alt=""></div>
+        <div class="tsb" onclick="myContainer()"><img src="https://images.herzindagi.info/image/2021/May/vineeta-singh-m_g.jpg" alt=""></div>
+        <div class="tsb" onclick="myContainer()"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFB3FkXtvmAEBzPaG5-4ws5PnmVcX5LNnsWg&usqp=CAU" alt=""></div>
     </div>
 
-    <!-- Gray line here -->
+    
 
-    <div class="u-499"><img src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-10modblock-oneBythree-A-Beauty-13June2022.jpg" alt=""></div>
+    <div class="u-499" onclick="myContainer()"><img src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-10modblock-oneBythree-A-Beauty-13June2022.jpg" alt=""></div>
 
-    <!-- line -->
-    <div class="u-499"><img src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-5modblock-oneBytwo1-C-beauty-13May2022.jpg" alt=""></div>
-   <!-- line -->
+    
+    <div class="u-499" onclick="myContainer()"><img src="https://lmsin.net/cdn-cgi/image/w=1232,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-5modblock-oneBytwo1-C-beauty-13May2022.jpg" alt=""></div>
+   
     <div class="TopSellingBrands"><h2>Lush Lips Offers</h2></div>   
     <div class="tasb">
-    <div class="tsb"><img src="./resource/yves.png" alt="Intni jaldi v kya h"></div>
-    <div class="tsb"><img src="./resource/revlon.png" alt=""></div>
-    <div class="tsb"><img src="./resource/nykaa.png" alt=""></div>
-    <div class="tsb"><img src="./resource/plum.png" alt="wait"></div>
-    <div class="tsb"><img src="./resource/myglam.png" alt=""></div>
-    <div class="tsb"><img src="./resource/mens grooming.png" alt="Thoda wait karlo"></div>
+    <div class="tsb" onclick="myContainer()"><img src="./resource/yves.png" alt="Intni jaldi v kya h"></div>
+    <div class="tsb" onclick="myContainer()"><img src="./resource/revlon.png" alt=""></div>
+    <div class="tsb" onclick="myContainer()"><img src="./resource/nykaa.png" alt=""></div>
+    <div class="tsb" onclick="myContainer()"><img src="./resource/plum.png" alt="wait"></div>
+    <div class="tsb" onclick="myContainer()"><img src="./resource/myglam.png" alt=""></div>
+    <div class="tsb" onclick="myContainer()"><img src="./resource/mens grooming.png" alt="Thoda wait karlo"></div>
     </div>
-     <!-- line -->
+     
      <div class="TopSellingBrands"><h2>Beauty Essentials</h2></div>
      <div class="be">
-        <div><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modblock-oneBythree-D-12April2022.jpg" alt=""></div>
-        <div><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modblock-oneBythree-E-16March2022.jpg" alt=""></div>
-        <div><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modblock-oneBythree-F-16March2022.jpg" alt=""></div>
+        <div onclick="myContainer()"><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modblock-oneBythree-D-12April2022.jpg" alt=""></div>
+        <div onclick="myContainer()"><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modblock-oneBythree-E-16March2022.jpg" alt=""></div>
+        <div onclick="myContainer()"><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modblock-oneBythree-F-16March2022.jpg" alt=""></div>
      </div>
-     <!-- line -->
+     
      <div class="TopSellingBrands"><h2>Budget Corner</h2></div>
      <div class="be">
-        <div><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-13modblock-oneBythree-A-Beauty-12April2022.jpg" alt=""></div>
-        <div><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-13modblock-oneBythree-B-Beauty-16March2022.jpg" alt=""></div>
-        <div><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-13modblock-oneBythree-C-Beauty-16March2022.jpg" alt=""></div>
+        <div onclick="myContainer()"><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-13modblock-oneBythree-A-Beauty-12April2022.jpg" alt=""></div>
+        <div onclick="myContainer()"><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-13modblock-oneBythree-B-Beauty-16March2022.jpg" alt=""></div>
+        <div onclick="myContainer()"><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-13modblock-oneBythree-C-Beauty-16March2022.jpg" alt=""></div>
      </div>
      <!-- line -->
      <div class="TopSellingBrands"><h2>Top picks of the season</h2></div>
      <div class="be">
-        <div><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modularblock-oneBythree-A-16March2022.jpg" alt=""></div>
-        <div><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modularblock-oneBythree-B-31March2022.jpg" alt=""></div>
-        <div><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modularblock-oneBythree-C-16March2022.jpg" alt=""></div>
+        <div onclick="myContainer()"><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modularblock-oneBythree-A-16March2022.jpg" alt=""></div>
+        <div onclick="myContainer()"><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modularblock-oneBythree-B-31March2022.jpg" alt=""></div>
+        <div onclick="myContainer()"><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-Beauty-modularblock-oneBythree-C-16March2022.jpg" alt=""></div>
      </div>
 
     <!-- line -->
     <div class="TopSellingBrands"><h2>Luxury Collection</h2></div>
      <div class="be">
-        <div><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-6modblk-oneBythree-A-Beauty-13May2022.jpg" alt=""></div>
-        <div><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-6modblk-oneBythree-B-Beauty-17March2022.jpg" alt=""></div>
-        <div><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-6modblk-oneBythree-C-Beauty-17March2022.jpg" alt=""></div>
+        <div onclick="myContainer()"><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-6modblk-oneBythree-A-Beauty-13May2022.jpg" alt=""></div>
+        <div onclick="myContainer()"><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-6modblk-oneBythree-B-Beauty-17March2022.jpg" alt=""></div>
+        <div onclick="myContainer()"><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-6modblk-oneBythree-C-Beauty-17March2022.jpg" alt=""></div>
      </div>
 
      <!-- line -->
      <div class="TopSellingBrands"><h2>Skin Essentials</h2></div>
      <div class="be">
-        <div><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-8modblock-oneBythree-A-Beauty-12April2022.jpg" alt=""></div>
-        <div><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-8modblock-oneBythree-B-Beauty-17March2022.jpg" alt=""></div>
-        <div><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-8modblock-oneBythree-C-Beauty-17March2022.jpg" alt=""></div>
+        <div onclick="myContainer()"><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-8modblock-oneBythree-A-Beauty-12April2022.jpg" alt=""></div>
+        <div onclick="myContainer()"><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-8modblock-oneBythree-B-Beauty-17March2022.jpg" alt=""></div>
+        <div onclick="myContainer()"><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-8modblock-oneBythree-C-Beauty-17March2022.jpg" alt=""></div>
      </div>
     
      <!-- ll -->
      <div class="TopSellingBrands"><h2>Beauty Trends</h2></div>
-     <div class="be">
-        <div><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-14modularblock-oneBythree-A-Beauty-17March2022.jpg" alt=""></div>
-        <div><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-14modularblock-oneBythree-B-Beauty-17March2022.jpg" alt=""></div>
-        <div><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-14modularblock-oneBythree-C-Beauty-17March2022.jpg" alt=""></div>
+     <div class="be" id="last-be">
+        <div onclick="myContainer()"><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-14modularblock-oneBythree-A-Beauty-17March2022.jpg" alt=""></div>
+        <div onclick="myContainer()"><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-14modularblock-oneBythree-B-Beauty-17March2022.jpg" alt=""></div>
+        <div onclick="myContainer()"><img src="https://lmsin.net/cdn-cgi/image/w=500,q=60,fit=cover/https://70415bb9924dca896de0-34a37044c62e41b40b39fcedad8af927.lmsin.net/LS-Fest/LS-new/desktop-dept-14modularblock-oneBythree-C-Beauty-17March2022.jpg" alt=""></div>
      </div>
      <!-- line -->
     <!-- Begning of footer -->

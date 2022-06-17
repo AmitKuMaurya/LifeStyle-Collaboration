@@ -12,6 +12,8 @@
     width: 82%;
     margin: auto;
     margin-top: 40px;
+    border-bottom: 1px solid rgb(216, 210, 210);
+    padding-bottom: 90px;
     
 }
 #category>div{
@@ -59,6 +61,8 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    border-bottom: 1px solid rgb(216, 210, 210);
+    padding-bottom: 70px;
 }
 .tsb{
     
@@ -74,6 +78,8 @@ h2{
     margin: auto;
     margin-top: 100px;
     margin-bottom: 50px;
+    border-bottom: 1px solid rgb(216, 210, 210);
+    padding-bottom: 70px;
 }
 .be{
     display: flex;
@@ -81,6 +87,8 @@ h2{
     width: 82%;
     margin: auto;
     justify-content: space-between;
+    border-bottom: 1px solid rgb(216, 210, 210);
+    padding-bottom: 70px;
 }
 .be>div{
     width: 380px;
@@ -91,5 +99,23 @@ h2{
     height: 100%;
     width: 100%;
 }
+#last-be{
+    border: none;
+    padding-bottom: 0px;
+}
 
 
+/* offer */
+
+#offfer{
+    height: 40px;
+    background-color: orange;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 16px;
+    font-weight: bold;
+} 

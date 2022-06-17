@@ -27,3 +27,8 @@ setInterval(function(){
      container.append(img);
      i++
      },2000)
+
+function myContainer(){
+    location.href="https://www.google.co.in/"
+}
+container.addEventListener("click",myContainer);
