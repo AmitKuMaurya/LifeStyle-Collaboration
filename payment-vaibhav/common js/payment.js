@@ -9,7 +9,7 @@ let homeDelivery =document.getElementById("home-delivery").addEventListener("cli
 
 function HomeDelivery(){
     
-    window.location.reload()
+    window.location.href="index.html";
     
 }
 

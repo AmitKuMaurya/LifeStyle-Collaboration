@@ -29,12 +29,15 @@ setInterval(function(){
      },2000)
 
 function myContainer(){
-    location.href="https://www.google.co.in/"
+    location.href="./ScrachProduct_sharun/women.html";
 }
 container.addEventListener("click",myContainer);
 
 
-import {navbar,footer} from './components/navbar.js'
+import {upperNavbar,navbar,footer} from './components/navbar.js'
+
+let upperNav = document.getElementById("top-bar");
+upperNav.innerHTML = upperNavbar();
 
 let nav = document.getElementById('navbar');
 console.log(navbar)
@@ -47,3 +50,7 @@ let foot = document.getElementById('footer')
 foot.innerHTML = footer();
 
 console.log(foot)
+
+
+
+
