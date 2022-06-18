@@ -32,3 +32,18 @@ function myContainer(){
     location.href="https://www.google.co.in/"
 }
 container.addEventListener("click",myContainer);
+
+
+import {navbar,footer} from './components/navbar.js'
+
+let nav = document.getElementById('navbar');
+console.log(navbar)
+console.log(nav)
+
+nav.innerHTML = navbar(); 
+
+let foot = document.getElementById('footer')
+
+foot.innerHTML = footer();
+
+console.log(foot)
