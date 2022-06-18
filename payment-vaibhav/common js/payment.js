@@ -302,7 +302,7 @@ let SubTotal =subtotal+40
 let total_price=document.getElementById("sub_total")
 total_price.innerText=`₹${subtotal}`
 
- if(total_price<=999){
+ if(subtotal<999){
     let total_p=document.getElementById("total_cost")
     total_p.innerText=`₹${SubTotal}`
     let deli_charge=document.getElementById("deli_charge")
