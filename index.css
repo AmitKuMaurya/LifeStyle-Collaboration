@@ -1,0 +1,121 @@
+
+
+
+
+
+#Slide-show{
+    width: 82%;
+    margin:auto;
+    margin-top: 35px;
+}
+#category{
+    width: 82%;
+    margin: auto;
+    margin-top: 40px;
+    border-bottom: 1px solid rgb(216, 210, 210);
+    padding-bottom: 90px;
+    
+}
+#category>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cat-type{
+    height: 180px;
+    width: 180px;
+    border: 3px solid burlywood;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+.cat-type>img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    
+}
+h2{
+    font-size: 36px;
+    font-family: ProximaNova-Regular,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-weight: 400;
+    
+}
+.TopSellingBrands{
+    margin: auto;
+    width: 82%;
+    margin-top: 100px;
+      
+
+}
+/* #TopSellingBrands+div{
+    margin: auto;
+    width: 82%;
+    display: flex;
+} */
+.tasb{
+    margin: auto;
+    width: 82%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(216, 210, 210);
+    padding-bottom: 70px;
+}
+.tsb{
+    
+    height: 195px;
+    width: 195px;
+}
+.tsb>img{
+    width: 100%;
+    height: 100%;
+}
+.u-499{
+    width: 82%;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid rgb(216, 210, 210);
+    padding-bottom: 70px;
+}
+.be{
+    display: flex;
+    flex-wrap: wrap;
+    width: 82%;
+    margin: auto;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(216, 210, 210);
+    padding-bottom: 70px;
+}
+.be>div{
+    width: 380px;
+    height: 380px;
+
+}
+.be>div>img{
+    height: 100%;
+    width: 100%;
+}
+#last-be{
+    border: none;
+    padding-bottom: 0px;
+}
+
+
+/* offer */
+
+#offfer{
+    height: 40px;
+    background-color: orange;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: ProximaNova-Semibold,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size: 16px;
+    font-weight: bold;
+} 
