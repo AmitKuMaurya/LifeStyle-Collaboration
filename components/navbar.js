@@ -1872,8 +1872,8 @@ function navbar(){
           id="search"
         />
       </li >
-      <li id="login" >SignUp-SignIn</li>
-      <a href="bucket_res/bucket.html">Bucket</a>
+      <li id="login" class="nav-list" >SignUp-SignIn</li>
+      <a href="bucket_res/bucket.html" class="nav-list">Bucket</a>
     </ul>
   </div>
   `;

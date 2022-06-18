@@ -3,6 +3,16 @@ let otp = Math.floor(Math.random()*100000);
 let container = document.getElementById("containerForm");
 container.innerHTML = signUpForm();
 // ----------->  functions <-----------
+// ----> () Appending name <----
+let appendingName = ()=>{
+
+    let userName = document.getElementById("login");
+    console.log('userName:', userName);
+    let naam = JSON.parse(localStorage.getItem('userNameData'))
+    console.log('naam:', naam);
+    userName.innerText = naam.firstName;
+}
+
 // ---> 4th (NameForm)  <---
 class UserName{
     constructor(f,l){
@@ -30,6 +40,7 @@ next.addEventListener('click',()=>{
     let lName  = document.getElementById('lName').value;
     let user = new UserName(fName,lName);
     localStorage.setItem('userNameData',JSON.stringify(user));
+    appendingName();
     container.style.display = 'none'
 })
 }
