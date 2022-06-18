@@ -1,6 +1,6 @@
 import {signUpForm,otpForm,emailForm,nameForm} from "./importForm.js";
 let otp = Math.floor(Math.random()*100000);
-let container = document.getElementById("container");
+let container = document.getElementById("containerForm");
 container.innerHTML = signUpForm();
 // ----------->  functions <-----------
 // ---> 4th (NameForm)  <---
