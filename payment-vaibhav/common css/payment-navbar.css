@@ -1,0 +1,668 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: ProximaNova-Regular,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+}
+
+h2{
+margin-top: 5%;
+}
+/* ................................................................for navbar ...................................................................................................*/
+#payment-navbar{
+      display: flex;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      width: 99%;
+      padding: 1%;
+      background-color: white;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+#payment-contacts{
+  margin-top: 1%;
+  margin-right: 6px;
+
+}
+.text-nav{
+  color:#72818D ;
+  font-size: 12px;
+}
+#payment-logo{
+  width: 109px;
+  height: 34px;
+  margin-left: 10px;
+
+}
+/* ........................................................for payment-data css part ..............................................................................*/
+#all-data{
+display: flex;
+}
+#main-div-payment{
+display: flex;
+margin-top: 10%;
+justify-content: space-evenly;
+width: 100%;
+/* height: 200px;
+border: 1px solid green; */
+}
+#main1-div{
+width: 100%;
+}
+#payment-datails{
+display: flex;
+}
+#payment-basket-info>div{
+display: block;
+justify-content: space-evenly;
+}
+#img-pay-opt{
+display: grid;
+grid-template-columns: repeat(4,1fr);
+gap: 10%;
+}
+#img-pay-opt>img{
+width: 40px;
+}
+#main1-div{
+width: 100%;
+}
+
+#payment-data{
+  display: flex;
+  /* margin-top: 10%; */
+}
+#payment-user-info{
+  width: 60%;
+  /* border: 1px solid green; */
+}
+#delivery-info{
+width: 60%;
+padding: 5%;
+box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+#delivery-info>h1{
+color: #242428;
+margin-bottom: 5%;
+}
+.p-tag{
+color: #242428;
+margin-bottom: 3%;
+}
+
+#payment-cart-info{
+  width: 35%;
+  /* border: 1px solid green; */
+  height: 400px;
+}
+.input-tag{
+width: 100%;
+padding: 2%;
+margin-bottom: 3%;
+}
+#home-office{
+display: flex;
+justify-content: space-around;
+margin-left: -20%;
+margin-top: 1%;
+}
+.optional-tag{
+display: flex;
+gap: 2%;
+}
+.opt-tag{
+color: rgb(165, 163, 163);
+}
+
+/* .................................................delivery-options div css .............................................................................................*/
+
+#delivery-options{
+  margin: auto;
+  display: flex;
+  gap: 4%;
+  padding: 2%;
+  /* border: 1px solid yellowgreen; */
+}
+#home-delivery,#store-delivery{
+  width: 40%;
+  padding: 3%;
+  font-size: 14px;
+  text-align: center;
+  border: 1px solid grey;
+  cursor: pointer;
+  
+}
+#delivery-address{
+  width: 100%;
+  padding: 3%;
+  text-align: justify;
+  font-size: 14px;
+
+}
+#location-info{
+width: 100%;
+
+}
+
+/*  ............................................................All Payment Part CSS  .......................................................................................*/
+#payment-datails{
+  margin-top: 2%;
+}
+.pay-options,#term-cond{
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  padding: 2.5%;
+}
+.pay-logo{
+  width: 10%;
+  margin-left: 2%;
+  margin-top: 1%;
+}
+.pay-info{
+  width: 80%;
+}
+.pay-info>p{
+margin-top: 1%;
+color: gray;
+}
+.pay-logo>img{
+  width: 50%;
+}
+.promo-card{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  padding: 2%;
+  text-align: justify;
+}
+.promo-card>img{
+  margin-left: 6%;
+  width: 5%;
+  margin-right: 5%;
+}
+.promo-card>a{
+  text-decoration: none;
+  color: rgb(219, 143, 3);
+}
+#pay-now{
+  display: flex;
+  padding: 5%;
+}
+#pay-opt{
+width: 50%;
+}
+#pay-now>div{
+  width: 50%;
+}
+
+p>a{
+color: #72818D;
+}
+
+#pay-btn>button{
+  width: 70%;
+  text-align: center;
+  background-color: #FAA619;
+  padding: 5%;
+  border: 0px;
+  color: #FFFFFF;
+  margin-left: 10%;
+  border-radius: 10px;
+  font-weight: bold;
+  
+}
+#pay-btn>button:hover{
+  background-color: #f6be5f;
+  cursor: pointer;
+}
+
+#pay-btn>button:active{
+transform: scale(0.98);}
+
+.secure-logo>img{
+  width: 100px;
+}
+.secure-logo>p{
+  color: #72818D;
+  margin-bottom: 10px;
+}
+.secure-logo>h5{
+  margin-bottom: 10px;
+}
+#term-cond{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  padding: 2%;
+}
+#term-cond>.secure-logo{
+  margin-right: 3%;
+}
+
+
+
+/* ..................................................................for check box  ..........................................................................................*/
+/* Customize the label (the container) */
+.check-box {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  /* margin-bottom: 12px; */
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-top:2%;
+}
+
+/* Hide the browser's default radio button */
+.check-box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color:white;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+
+/* On mouse-over, add a grey background color */
+.check-box:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.check-box input:checked ~ .checkmark {
+  background-color:white;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.check-box input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.check-box .checkmark:before {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: orange;
+}
+
+
+/*.............................................................Map CSS ..........................................................................*/
+.gmap_canvas{
+  width: 600px;
+  height: auto;
+  /* border: 2px solid; */
+  margin-left: 20px;
+}
+iframe{
+  width: 100%;
+  height: 150%;
+  /* margin-left: 7%; */
+}
+#city_search{
+  width: 15%;
+  position: absolute;
+  margin-top: 3.5%;
+  margin-left: 2.5%;
+
+}
+#city_search>input{
+  padding: 2%;
+  width: 100%;
+}
+
+
+/* ...........................................................First Card deatils ....................................................................................................*/
+#card-details{
+  display: block;
+  /* border: 1px solid red; */
+  width: 70%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  padding: 5%;
+
+}
+#card-1{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+
+}
+.card-1-1{
+  display: flex;
+}
+#form>input{
+  width: 100%;
+  /* height: 40px; */
+  border:1px solid #bdc6ce;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  padding: 2.5%;
+  
+}
+#card-details>h3{
+  color: #4b4e51;
+  font-size: 16px;
+}
+.bill-address{
+  display: flex;
+  gap: 3%;
+  margin-top: 3%;
+}
+#bill-address-check>h3{
+  margin-top: 3%;
+}
+
+
+/* EMI css......................................................................................*/
+#emi-card-1{
+  display: none;
+  width: 50%;
+  padding: 5%;
+}
+#emi-card-1>input{
+  width: 100%;
+  /* height: 40px; */
+  border:1px solid #bdc6ce;
+  /* margin-top: 2%; */
+  margin-bottom: 4%;
+  padding: 3.5%;
+}
+#emi-card-1>h3{
+  margin-bottom: 3%;
+}
+
+/*...................Net Banking......................................................*/
+
+#net-banking-div{
+  display: none;
+  width: 50%;
+}
+#net-banking-div>select{
+  width: 90%;
+  padding: 3.5%;
+  /* margin-left: -20%; */
+}
+
+/*.............Wallet CSS......................................................................*/
+#wallet-div{
+  display: none;
+  width: 50%;
+  /* border: 1px solid red; */
+}
+#select-wallet{
+  width: 90%;
+  border: 1px solid;
+  padding: 5%;
+}
+#wallet-div-info{
+  display: none;
+  background-color:white;
+  position: absolute;
+  margin-left: -50px;
+  box-shadow: rgba(36, 35, 35, 0.05) 0px 0px 0px 1px;
+  cursor: pointer;
+  padding:2% ;
+}
+.wallet-div-all:hover{
+  background-color:rgba(224, 217, 217, 0.642);
+}
+
+#wallet-div>input{
+  width: 90%;
+  padding: 3.5%;
+}
+
+.wallet-div-all{
+  display: flex;
+  /* border: 1px solid gold; */
+  gap: 5%;
+  padding: 2%;
+  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; */
+}
+.wallet-img{
+  margin-left: 2%;
+  width: 15%;
+  /* border: 1px solid green; */
+}
+.wallet-name{
+  width: 70%;
+  margin-left: 5%;
+}
+.wallet-img>img{
+  width: 100%;
+  margin-left: 5%;
+}
+
+/*...............UPI...CSS.................................................................*/
+#Upi-Opt{
+  display: none;
+}
+
+#upi-opt{
+  width: 60%;
+  /* border: 1px solid red; */
+  margin-left: 2%;
+  display: grid;
+  
+  grid-template-columns: repeat(2,1fr);
+  gap: 5%;
+  padding: 5%;
+  box-shadow: rgba(36, 35, 35, 0.05) 0px 0px 0px 1px;
+}
+#upi-opt-1{
+  display: flex;
+  justify-content: space-evenly;
+  /* width: 50%; */
+}
+.upi-opt-all{
+  display: flex;
+  border: 1px solid rgb(187, 180, 180); 
+  padding: 3%;
+}
+.lable_1{
+  font-weight: bold;
+}
+#upi-opt-id-1>input{
+  width: 100%;
+  height: 40px;
+}
+#upi-opt-id-2>select{
+  width: 100%;
+  height: 40px;
+}
+
+/*.......................iframe.CSS...........................................................*/
+#city_search{
+display: none;
+}
+
+#location-info{
+  display: none;
+}
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  height:600px;
+  width:740px
+
+};
+      .mapouter{
+          width: 100%;
+          height: 200px;
+      }
+      #main{
+          margin: auto;
+          margin-top: 5%;
+          display: flex;
+          justify-content: center;
+      }
+/*...........Order summary CSS........................................................................*/
+#payment-basket-info{
+  /* position: fixed;
+  top: 10%;
+  width: 100%; */
+  height: auto;
+  margin-left: 2%;
+  width: 32%;
+  padding: 2%;
+}
+
+.summary-cost-class{
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+}
+#shipping-cost>div>p+p{
+  font-size: 14px;
+  color: green;
+  margin-top: 4%;
+}
+#product-basket{
+  box-shadow: rgba(36, 35, 35, 0.05) 0px 0px 0px 1px;
+  padding: 5%;
+}
+#img-pay-opt{
+  margin-top: 6%;
+}
+#pay-note>p{
+  color: grey;
+  font-size: 14px;
+}
+#pay-options{
+  margin-top: 5%;
+}
+
+/*..............................After Pay Now.....................................................*/
+
+/* pay-btn */
+#out-put{
+  width: 400px;
+  height: 350px;
+  position:absolute;
+  background-color: rgba(63, 86, 61, 0.466);
+  margin-top: -330px;
+  margin-left:450px ;
+  padding: 1%;
+  display: none;
+  
+
+}
+#order-process{
+/* display: block; */
+}
+#order-placed{
+  display: none;
+}
+#order-process>img,#order-placed>img{
+  width: 40%;
+  margin-left: 30%;
+}
+#order-process>h3,#order-placed>h3,#order-process>p,#order-placed>p{
+  text-align: center;
+  margin-bottom: 7%;
+  margin-top: 5%;
+}
+#more-shop{
+  width: 150px;
+  margin-top: 15px;
+  margin-left: 31%;
+  padding:10px;
+  background-color: #e37536;
+  border: 0px;
+  font-weight: bold;
+  border-radius: 10px;
+  color: rgb(237, 230, 230);
+  cursor: pointer;
+}
+#more-shop:hover{
+background-color: #4e392c;
+}
+#more-shop:active{
+transform: scale(0.98);}
+#order-process{
+display: none;
+
+}
+#final-confirmation>h2{
+margin-bottom: 10px;
+text-align: center;
+color: rgb(128, 44, 76);
+}
+
+#final-confirmation{
+text-align: justify;
+}
+#checck_info{
+width: 200px;
+padding: 10px;
+margin-top: 20px;
+margin-left: 23%;  
+border: 0px;
+background-color: rgb(170, 231, 48);
+font-weight: bold;
+
+}
+#checck_info:hover{
+background-color: rgb(83, 104, 42);
+cursor: pointer;
+color: wheat;
+}
+#checck_info:active{
+transform: scale(0.98);
+
+/*........................Append Data to Summary...........................................................*/
+}
+#prod_div{
+  display: flex;
+  border: 1px solid rgb(194, 191, 191);
+  width: 100%;
+  
+  padding: 2%;
+}
+#div-img{
+  width: 25%;
+  margin-right: 10%;
+}
+#div-img>img{
+  width: 80%;
+}
+#info_div>p{
+  font-size: 14px;
+  margin-bottom: 5%;
+}
+#middle-div{
+  display: flex;
+  justify-content: space-between;
+}
+#price_tag,#sub_total,#total_cost,#deli_charge{
+  color:rgb(7, 0, 0);
+  font-weight: 540;
+}
+#main_t{
+  color: grey;
+}
+#summary-cost-class{
+padding: 2%;
+}
+/*...................................................................................*/
+
