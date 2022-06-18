@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  margin: auto;
+  width: 87%;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper {
+  width: 95%;
+  height: fit-content;
+}
+.swiper-slide img {
+  width: 100%;
+}
+
+#container .swiper-button-prev,
+#container .swiper-button-next {
+  color: #111;
+
+  transition: 900ms;
+}
+#container .swiper-button-next:hover {
+  background: rgba(59, 58, 58, 0.582);
+  transform: scale(1.5);
+}
+
+#container .swiper-button-prev:hover {
+  background: rgba(59, 58, 58, 0.582);
+  transform: scale(1.5);
+}
