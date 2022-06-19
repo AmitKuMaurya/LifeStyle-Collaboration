@@ -141,6 +141,8 @@ function SentToConfirm() {
   window.location.reload();
 }
 
+<<<<<<< HEAD:jsFiles/bucket.js
+=======
 
 
 // button for checkout 
@@ -152,3 +154,4 @@ function CheckOutButton(){
   window.location.href="../payment-vaibhav/html/payment-navbar.html"
 }
 
+>>>>>>> 03351199723ea46d69d000986b3ab30be237fd38:Bucket_res/bucket.js

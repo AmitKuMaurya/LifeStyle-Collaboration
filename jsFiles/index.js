@@ -26,15 +26,12 @@ setInterval(function(){
      img.src=image;
      container.append(img);
      i++
-     },2000)
-
-function myContainer(){
-    location.href="./ScrachProduct_sharun/women.html";
-}
-container.addEventListener("click",myContainer);
+     },3000)
 
 
-import {upperNavbar,navbar,footer} from './components/navbar.js'
+
+
+import {upperNavbar,navbar,footer} from '../components/navbar.js'
 
 let upperNav = document.getElementById("top-bar");
 upperNav.innerHTML = upperNavbar();
@@ -50,6 +47,10 @@ let foot = document.getElementById('footer')
 foot.innerHTML = footer();
 
 console.log(foot)
+
+
+
+//
 
 
 

@@ -8,6 +8,7 @@ body{
 }
 
 #upper-floor>p:first-child{
+    margin-top: 2%;
     font-weight: 500;
     color: black;
     font-size: larger;
@@ -16,6 +17,8 @@ body{
     /* margin-bottom: %; */
 }
 #upper-floor>p:last-child{
+    margin-top: 2%;
+    margin-bottom: 1%;
     font-weight: 600;
     font-size: 15px;
     /* color: pink; */
@@ -60,21 +63,20 @@ body{
 #div-content>h5{
     display: inline-block;
     padding-right: 15px;
-    margin-top: -13px;
+    margin-top: 3%;
 }
 
 #div-content>h5+h5{
-    /* display: block; */
     color: #46b275;
-    margin-top: -10px;
+    margin-bottom: 3%;
 }
 #div-content>h5+p{
-    margin-top: -10px;
+    /* margin-top: -10px; */
     font-size: 13px;
     color: grey;
 }
 #div-content>p+p{
-    margin-top: -10px;
+    /* margin-top: -10px; */
     font-size: 13px;
     color: grey;
 }
@@ -118,6 +120,7 @@ margin-left: 20px;
     align-items: center;
     justify-content:space-evenly;
     margin-bottom: 2%;
+    padding: 10px 7px 10px 7px;
 }
 #delivery-pincode>input{
     padding: 7px 5px 7px 5px;
@@ -159,7 +162,8 @@ margin-left: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 #discount{
     width: 90%;
@@ -167,7 +171,8 @@ margin-left: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: -12px;
+    
+    margin-bottom: 12px;
 }
 #discount>h5{
     color: #46b275;
@@ -176,10 +181,12 @@ margin-left: 20px;
     width: 90%;
     margin: auto;
     display: flex;
+    /* font-size: 13px; */
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #C8C9C6;
-    margin-top: -12px;
+    padding-bottom: 12px;
+    margin-bottom: 12px;
 }
 #total{
     width: 90%;
@@ -187,10 +194,10 @@ margin-left: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 2%;
 }
-#checkout-box>button{
+a>button{
     width: 90%;
-    /* width: 100%; */
     padding: 20px 0px 20px 0px;
     background-color: orange;
     color: white;

@@ -551,6 +551,15 @@ display: none;
 #pay-options{
   margin-top: 5%;
 }
+#append-basket{
+  height: 350px;
+ 
+  overflow-x: scroll;
+  border: 0.5px solid rgb(195, 193, 193);
+}
+#append-basket::-webkit-scrollbar{
+  display: none;
+}
 
 /*..............................After Pay Now.....................................................*/
 

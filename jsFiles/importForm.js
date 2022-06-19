@@ -2,7 +2,7 @@ function signUpForm(){
   return `<div class="container">
   <div id="form_container">
   <div class="cross_btn">
-  <img src="./loginSignup/close_FILL0_wght300_GRAD0_opsz40.png" alt="">
+  <img src="../loginSignup/close_FILL0_wght300_GRAD0_opsz40.png" alt="">
       </div>
   <div id="login_form">
     <h1>Sign up or Sign in</h1>
@@ -39,7 +39,7 @@ return ` <div id="otpForm " >
 <div class="container">
     <div id="form_container">
         <div class="cross_btn">
-            <img src="./loginSignup/close_FILL0_wght300_GRAD0_opsz40.png" alt="">
+            <img src="../loginSignup/close_FILL0_wght300_GRAD0_opsz40.png" alt="">
         </div>
         <div id="login_form">
             <h1>Sign up or Sign in</h1>
@@ -96,7 +96,7 @@ return `<div id="userDataForm " >
 <div class="container">
     <div id="form_container">
     <div class="cross_btn">
-    <img src="./loginSignup/close_FILL0_wght300_GRAD0_opsz40.png" alt="">
+    <img src="../loginSignup/close_FILL0_wght300_GRAD0_opsz40.png" alt="">
         </div>
     <div id="login_form">
       <h1>How do we address you?</h1>

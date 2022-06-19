@@ -232,7 +232,11 @@ let UserArray=[]
 
 let more_shop=document.getElementById("more-shop").addEventListener("click",moreShop)
 function moreShop(){
+<<<<<<< HEAD
+   window.location.href="../../htmlFiles/index.html";
+=======
    window.location.href="/index.html"
+>>>>>>> 03351199723ea46d69d000986b3ab30be237fd38
 } 
 }
 

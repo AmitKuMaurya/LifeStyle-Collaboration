@@ -135,6 +135,7 @@ let otpPage = ()=>{
 }
 // ---> catching button & adding Event in open and close button <---
 let btn = document.getElementById('login');
+console.log("btn:",btn);
 btn.addEventListener('click',myForm);
 let close = document.querySelector(".cross_btn>img");
 close.addEventListener('click',closeForm);

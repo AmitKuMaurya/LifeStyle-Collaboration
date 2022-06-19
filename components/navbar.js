@@ -16,15 +16,15 @@ function upperNavbar(){
 }
 
 function navbar(){
-    return ` <div>
+    return ` <div id="padd">
     <ul class="main-list">
-      <li id="home-logo"><a href="index.html"><img src="data:image/png;base64,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" alt=""></a></li>
+      <li id="home-logo"><a href="../htmlFiles/index.html"><img src="data:image/png;base64,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" alt=""></a></li>
       <li class="nav-list">
-        <a href="./ScrachProduct_sharun/women.html">Women</a>
+        <a href="../htmlFiles/women.html">Women</a>
         <div class="sub-list">
           <ul>
             <li class="nav-list-types">
-              <a href="./ScrachProduct_sharun/women.html">Ethinic</a>
+              <a href="../htmlFiles/women.html">Ethinic</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -65,7 +65,7 @@ function navbar(){
             </li>
 
             <li class="nav-list-types">
-              <a href="./ScrachProduct_sharun/women.html">Estern</a>
+              <a href="../htmlFiles/women.html">Estern</a>
               <div class="sub-sub-list">
                 <div class="sub-sub-listContainer">
                   <div class="sub-sub-listCategory">
@@ -103,7 +103,7 @@ function navbar(){
               </div>
             </li>
             <li class="nav-list-types">
-              <a href="./ScrachProduct_sharun/women.html">Lingeri/Sleepwear</a>
+              <a href="../htmlFiles/women.html">Lingeri/Sleepwear</a>
               <div class="sub-sub-list">
                 <div class="sub-sub-listContainer">
                   <div class="sub-sub-listCategory">
@@ -141,7 +141,7 @@ function navbar(){
               </div>
             </li>
             <li class="nav-list-types">
-              <a href="./ScrachProduct_sharun/women.html">top Brand</a>
+              <a href="../htmlFiles/women.html">top Brand</a>
               <div class="sub-sub-list">
                 <div class="sub-sub-listContainer">
                   <div class="sub-sub-listCategory">
@@ -179,7 +179,7 @@ function navbar(){
               </div>
             </li>
             <li class="nav-list-types">
-              <a href="./ScrachProduct_sharun/women.html">Sports</a>
+              <a href="../htmlFiles/women.html">Sports</a>
               <div class="sub-sub-list">
                 <div class="sub-sub-listContainer">
                   <div class="sub-sub-listCategory">
@@ -217,7 +217,7 @@ function navbar(){
               </div>
             </li>
             <li class="nav-list-types">
-              <a href="./ScrachProduct_sharun/women.html">Plus Size</a>
+              <a href="../htmlFiles/women.html">Plus Size</a>
               <div class="sub-sub-list">
                 <div class="sub-sub-listContainer">
                   <div class="sub-sub-listCategory">
@@ -255,7 +255,7 @@ function navbar(){
               </div>
             </li>
             <li class="nav-list-types">
-              <a href="./ScrachProduct_sharun/women.html">Winter</a>
+              <a href="../htmlFiles/women.html">Winter</a>
               <div class="sub-sub-list">
                 <div class="sub-sub-listContainer">
                   <div class="sub-sub-listCategory">
@@ -293,7 +293,7 @@ function navbar(){
               </div>
             </li>
             <li class="nav-list-types">
-              <a href="./ScrachProduct_sharun/women.html">Size</a>
+              <a href="../htmlFiles/women.html">Size</a>
               <div class="sub-sub-list">
                 <div class="sub-sub-listContainer">
                   <div class="sub-sub-listCategory">
@@ -331,7 +331,7 @@ function navbar(){
               </div>
             </li>
             <li class="nav-list-types">
-              <a href="./ScrachProduct_sharun/women.html">Beauty</a>
+              <a href="../htmlFiles/women.html">Beauty</a>
               <div class="sub-sub-list">
                 <div class="sub-sub-listContainer">
                   <div class="sub-sub-listCategory">
@@ -369,7 +369,7 @@ function navbar(){
               </div>
             </li>
             <li class="nav-list-types">
-              <a href="./ScrachProduct_sharun/women.html">Foot</a>
+              <a href="../htmlFiles/women.html">Foot</a>
               <div class="sub-sub-list">
                 <div class="sub-sub-listContainer">
                   <div class="sub-sub-listCategory">
@@ -407,7 +407,7 @@ function navbar(){
               </div>
             </li>
             <li class="nav-list-types">
-              <a href="./ScrachProduct_sharun/women.html">Watch</a>
+              <a href="../htmlFiles/women.html">Watch</a>
               <div class="sub-sub-list">
                 <div class="sub-sub-listContainer">
                   <div class="sub-sub-listCategory">
@@ -445,7 +445,7 @@ function navbar(){
               </div>
             </li>
             <li class="nav-list-types">
-              <a href="./ScrachProduct_sharun/women.html">jwelery</a>
+              <a href="../htmlFiles/women.html">jwelery</a>
               <div class="sub-sub-list">
                 <div class="sub-sub-listContainer">
                   <div class="sub-sub-listCategory">
@@ -483,7 +483,7 @@ function navbar(){
               </div>
             </li>
             <li class="nav-list-types">
-              <a href="./ScrachProduct_sharun/women.html">More</a>
+              <a href="../htmlFiles/women.html">More</a>
               <div class="sub-sub-list">
                 <div class="sub-sub-listContainer">
                   <div class="sub-sub-listCategory">
@@ -524,7 +524,7 @@ function navbar(){
         </div>
       </li>
       <li class="nav-list men">
-        <a href="./ScrachProduct_sharun/mens.html./ScrachProduct_sharun/mens.html"> Men</a>
+        <a href="../htmlFiles/mens.html"> Men</a>
         <div class="sub-list">
           <ul>
             <li class="nav-list-types"><a href="./ScrachProduct_sharun/mens.html">Topwear</a>
@@ -563,7 +563,7 @@ function navbar(){
               </div>
               <!-- end -->
             </li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/mens.html">Bottomwear</a>
+            <li class="nav-list-types"><a href="../htmlFiles/mens.html">Bottomwear</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -598,7 +598,7 @@ function navbar(){
                 </div>
               </div>
             </li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/mens.html">Activewear</a>
+            <li class="nav-list-types"><a href="../htmlFiles/mens.html">Activewear</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -632,7 +632,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/mens.html">Ethnic</a>
+            <li class="nav-list-types"><a href="../htmlFiles/mens.html">Ethnic</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -666,7 +666,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/mens.html">Winterwear</a>
+            <li class="nav-list-types"><a href="../htmlFiles/mens.html">Winterwear</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -700,7 +700,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/mens.html">Innerwear</a>
+            <li class="nav-list-types"><a href="../htmlFiles/mens.html">Innerwear</a>
             
               <div class="sub-sub-list">
                 <!--copy start-->
@@ -735,7 +735,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/mens.html">Top Brands</a>
+            <li class="nav-list-types"><a href="../htmlFiles/mens.html">Top Brands</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -770,7 +770,7 @@ function navbar(){
                 </div>
               </div>
             </li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/mens.html">Watches</a>
+            <li class="nav-list-types"><a href="../htmlFiles/mens.html">Watches</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -804,7 +804,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/mens.html">Sunglasses</a>
+            <li class="nav-list-types"><a href="../htmlFiles/mens.html">Sunglasses</a>
             
               <div class="sub-sub-list">
                 <!--copy start-->
@@ -839,7 +839,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/mens.html">Shoes</a>
+            <li class="nav-list-types"><a href="../htmlFiles/mens.html">Shoes</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -873,7 +873,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/mens.html">Gromming</a>
+            <li class="nav-list-types"><a href="../htmlFiles/mens.html">Gromming</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -907,7 +907,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/mens.html">More</a>
+            <li class="nav-list-types"><a href="../htmlFiles/mens.html">More</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -945,10 +945,10 @@ function navbar(){
         </div>
       </li>
       <li class="nav-list kids">
-        <a href="./ScrachProduct_sharun/kids.html"> Kids</a>
+        <a href="../htmlFiles/kids.html"> Kids</a>
         <div class="sub-list">
           <ul>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/kids.html">Boys</a> <div class="sub-sub-list">
+            <li class="nav-list-types"><a href="../htmlFiles/kids.html">Boys</a> <div class="sub-sub-list">
               <!--copy start-->
               <div class="sub-sub-listContainer">
                 <div class="sub-sub-listCategory">
@@ -981,7 +981,7 @@ function navbar(){
                 </div>
               </div>
             </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/kids.html">Girls</a>
+            <li class="nav-list-types"><a href="../htmlFiles/kids.html">Girls</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1015,7 +1015,7 @@ function navbar(){
                   </div>
                 </div>
               </div> </li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/kids.html">Top Brands</a>
+            <li class="nav-list-types"><a href="../htmlFiles/kids.html">Top Brands</a>
             
               <div class="sub-sub-list">
                 <!--copy start-->
@@ -1050,7 +1050,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/kids.html">Accessories</a>
+            <li class="nav-list-types"><a href="../htmlFiles/kids.html">Accessories</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1084,7 +1084,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/kids.html">Price Point Store</a>
+            <li class="nav-list-types"><a href="../htmlFiles/kids.html">Price Point Store</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1118,7 +1118,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/kids.html">Age Store</a>
+            <li class="nav-list-types"><a href="../htmlFiles/kids.html">Age Store</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1152,7 +1152,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/kids.html">Boys FootWear</a>
+            <li class="nav-list-types"><a href="../htmlFiles/kids.html">Boys FootWear</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1186,7 +1186,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/kids.html">Girls Footwear</a>
+            <li class="nav-list-types"><a href="../htmlFiles/kids.html">Girls Footwear</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1220,7 +1220,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/kids.html">Charater Shop</a>
+            <li class="nav-list-types"><a href="../htmlFiles/kids.html">Charater Shop</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1254,7 +1254,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/kids.html">Offer</a>
+            <li class="nav-list-types"><a href="../htmlFiles/kids.html">Offer</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1288,7 +1288,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/kids.html">More</a>
+            <li class="nav-list-types"><a href="../htmlFiles/kids.html">More</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1326,10 +1326,10 @@ function navbar(){
         </div>
       </li>
       <li class="nav-list shoes">
-        <a href="./ScrachProduct_sharun/Shoes_bags.html"> Shoes and Bags</a>
+        <a href="../htmlFiles/Shoes_bags.html"> Shoes and Bags</a>
         <div class="sub-list">
           <ul>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/Shoes_bags.html">Women</a>
+            <li class="nav-list-types"><a href="../htmlFiles/Shoes_bags.html">Women</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1363,7 +1363,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/Shoes_bags.html">Men</a>
+            <li class="nav-list-types"><a href="../htmlFiles/Shoes_bags.html">Men</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1397,7 +1397,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/Shoes_bags.html">Boys</a>
+            <li class="nav-list-types"><a href="../htmlFiles/Shoes_bags.html">Boys</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1431,7 +1431,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/Shoes_bags.html">Girls</a><div class="sub-sub-list">
+            <li class="nav-list-types"><a href="../htmlFiles/Shoes_bags.html">Girls</a><div class="sub-sub-list">
               <!--copy start-->
               <div class="sub-sub-listContainer">
                 <div class="sub-sub-listCategory">
@@ -1464,7 +1464,7 @@ function navbar(){
                 </div>
               </div>
             </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/Shoes_bags.html">WomenAccessories</a>
+            <li class="nav-list-types"><a href="../htmlFiles/Shoes_bags.html">WomenAccessories</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1498,7 +1498,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/Shoes_bags.html">Essentials</a>
+            <li class="nav-list-types"><a href="../htmlFiles/Shoes_bags.html">Essentials</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1532,7 +1532,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/Shoes_bags.html">Price Store</a>
+            <li class="nav-list-types"><a href="../htmlFiles/Shoes_bags.html">Price Store</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1566,7 +1566,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/Shoes_bags.html">More</a>
+            <li class="nav-list-types"><a href="../htmlFiles/Shoes_bags.html">More</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1604,10 +1604,10 @@ function navbar(){
         </div>
       </li>
       <li class="nav-list beauty">
-        <a href="./ScrachProduct_sharun/Beauty.html"> Beauty</a>
+        <a href="../htmlFiles/Beauty.html"> Beauty</a>
         <div class="sub-list">
           <ul>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/Beauty.html">Lips</a>
+            <li class="nav-list-types"><a href="../htmlFiles/Beauty.html">Lips</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1630,7 +1630,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/Beauty.html">Face</a>
+            <li class="nav-list-types"><a href="../htmlFiles/Beauty.html">Face</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1653,7 +1653,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/Beauty.html">Eyes</a>
+            <li class="nav-list-types"><a href="../htmlFiles/Beauty.html">Eyes</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1676,7 +1676,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/Beauty.html">Nails</a>
+            <li class="nav-list-types"><a href="../htmlFiles/Beauty.html">Nails</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1699,7 +1699,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/Beauty.html">Skin Care</a>
+            <li class="nav-list-types"><a href="../htmlFiles/Beauty.html">Skin Care</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1722,7 +1722,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/Beauty.html">Bath & Body</a>
+            <li class="nav-list-types"><a href="../htmlFiles/Beauty.html">Bath & Body</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1745,7 +1745,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="./ScrachProduct_sharun/Beauty.html">Fragrance</a>
+            <li class="nav-list-types"><a href="../htmlFiles/Beauty.html">Fragrance</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1769,7 +1769,7 @@ function navbar(){
                 </div>
               </div></li>
             <li class="nav-list-types">
-              <a href="./ScrachProduct_sharun/Beauty.html">Tools & Accessories</a>
+              <a href="../htmlFiles/Beauty.html">Tools & Accessories</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1793,7 +1793,7 @@ function navbar(){
                 </div>
               </div>
             </li>
-            <li class="nav-list-types"><a href="">Men Grooming</a>
+            <li class="nav-list-types"><a href="../htmlFiles/Beauty.html">Men Grooming</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1816,7 +1816,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="">Essentials</a>
+            <li class="nav-list-types"><a href="../htmlFiles/Beauty.html">Essentials</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1839,7 +1839,7 @@ function navbar(){
                   </div>
                 </div>
               </div></li>
-            <li class="nav-list-types"><a href="">More</a>
+            <li class="nav-list-types"><a href="../htmlFiles/Beauty.html">More</a>
               <div class="sub-sub-list">
                 <!--copy start-->
                 <div class="sub-sub-listContainer">
@@ -1873,7 +1873,7 @@ function navbar(){
         />
       </li >
       <li id="login" class="nav-list" >SignUp-SignIn</li>
-      <a href="bucket_res/bucket.html" class="nav-list">Bucket</a>
+      <a href="../htmlFiles/bucket.html" class="nav-list" id="modify-bucket" >Bucket</a>
     </ul>
   </div>
   `;

@@ -4,114 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD:htmlFiles/menShoes.html
+    <title>Shoes</title>
+    <link
+    rel="shortcut icon"
+    sizes="152x152"
+    href="https://i1.lmsin.net/website_images/in/favicons/lifestyle/apple-touch-icon-152x152.png"
+  />
+  <link rel="stylesheet" href="../CssFiles/nav_and_footer.css">
+ 
+  <link rel="stylesheet" href="../CssFiles/common1.css">
+=======
     <title>Online Shoping at Lifestyle</title>
+>>>>>>> 03351199723ea46d69d000986b3ab30be237fd38:Produts_res/menShoes.html
     <style>
-      * {
-        margin: 0px;
-        padding: 0px;
-        font-family: ProximaNova-Regular, "Helvetica Neue", Arial, sans-serif,
-          "Apple Color Emoji", "Segoe UI Emoji";
-      }
-      .fiting {
-        /* border: 1px solid black; */
-        height: 550px;
-        width: 297px;
-        background-color: white;
-        padding-bottom: 48px;
-      }
-
-      #sortingPanel{
-        display: flex;
-        gap: 2rem;
-        margin-top: 5%;
-        margin-left: 5%;
-        margin-bottom: -7%;
-      }
-
-      #container {
-        margin: auto;
-        width: 90%;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 15px;
-        margin-top: 10%;
-       
-      
-        
-      }
-      /* #container>div{
-        transition: 900ms;
-       
-       
-      } */
-      #container>div:hover{
-        transform: scale(1.1px);
-      }
-      #container>div>img{
-        width: 100%;
-
-      }
-
-    
-      #selectDiv {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 5px;
-        /* border: 1px solid black; */
-      }
-      select {
-        border: 0.13px solid rgb(244, 203, 203);
-        padding: 10px;
-        cursor: pointer;
-      }
-      select:nth-child(1) {
-        padding-right: 60px;
-      }
-      button {
-        height: 48px;
-        width: 100%;
-        padding: 6px 16px 6px 16px;
-        border: none;
-        background-color: #faa619;
-        color: white;
-        cursor: pointer;
-        margin-top: 5px;
-      }
-      .hiddenDiv {
-        display: none;
-      }
-      .fiting:hover .hiddenDiv {
-        display: block;
-      }
-
-      .fiting:hover {
-       
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-          rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-        border: 15px solid white;
-      }
-      #sortingPanel>select{
-        background-color: #faa619;
-        border: 1px solid rgb(255, 153, 0);
-        border-radius: 3px;
-       
-        font-weight: 100;
-        font-size: 20px;
-        color: white;
-      }
-      #sortingPanel>select>option{
-        background: white;
-        color: black;
-      }
+   
     </style>
   </head>
   <body>
+    <div id="top-bar"></div>
+    <div id="navbar"></div>
     <div id="sortingPanel"></div>
     <div id="container">
 
     </div>
+    <div id="footer"></div>
   </body>
 </html>
+<script type="module" async>
+  import {upperNavbar,navbar,footer} from '../components/navbar.js'
+
+
+  let upperNav = document.getElementById("top-bar");
+upperNav.innerHTML = upperNavbar();
+
+let nav = document.getElementById('navbar');
+console.log(navbar)
+console.log(nav)
+
+nav.innerHTML = navbar(); 
+
+let foot = document.getElementById('footer')
+
+foot.innerHTML = footer();
+
+console.log(foot)
+
+</script>
 <script>
   //     
   var Wdata = [
@@ -529,13 +468,15 @@
 
       let selectColor = document.createElement("select");
       let colorOption1 = document.createElement("option");
+      let df=document.createElement('option')
+      df.innerText='Choose Color'
       colorOption1.innerText = "Red";
       colorOption1.innerText = "Pink";
       let colorOption2 = document.createElement("option");
       colorOption2.innerText = "Black";
       let colorOption3 = document.createElement("option");
       colorOption3.innerText = "White";
-      selectColor.append(colorOption1, colorOption2, colorOption3);
+      selectColor.append(df,colorOption1, colorOption2, colorOption3);
       colorDiv.append(selectColor);
 
       let selectSize = document.createElement("select");
@@ -581,6 +522,7 @@
     basketArr.push(el);
     localStorage.setItem("products", JSON.stringify(basketArr));
     console.log(el);
+    alert("Your Product has been added to Bucket");
   };
   append(Wdata);
 

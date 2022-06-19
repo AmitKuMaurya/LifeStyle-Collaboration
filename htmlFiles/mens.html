@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Online Shopping at Lifestyle/Mens</title>
+    <title>Lifestyle/Mens</title>
     <link
       rel="shortcut icon"
       sizes="152x152"
@@ -14,10 +14,18 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="sliding.css" />
-    <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="../CssFiles/nav_and_footer.css">
+    <link rel="stylesheet" href="../CssFiles/sliding.css" />
+    <link rel="stylesheet" href="../CssFiles/common.css" />
+    <!-- <link rel="stylesheet" href="../CssFiles/bucket.css">
+    <link rel="stylesheet" href="../CssFiles/common1.css">-->
+    <link rel="stylesheet" href="../CssFiles/login.css"> 
   </head>
   <body>
+    <div id="containerForm"></div>
+
+    <div id="top-bar"></div>
+    <div id="navbar"></div>
     <div id="container">
       <!-- Slider main container -->
       <div class="swiper">
@@ -179,9 +187,10 @@ Shop By Department -->
       <h1>Shop By Department</h1>
       <div id="dept"></div>
     </div>
+    <div id="footer"></div>
   </body>
   <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-  <script src="slide.js"></script>
+  <script src="../jsFiles/slide.js"></script>
 </html>
 <script>
   let cat_data = [
@@ -250,10 +259,17 @@ Shop By Department -->
 
       box.append(img, p);
       box.style.cursor = "pointer";
+      box.addEventListener('click',function(){
+        window.location.href='../htmlFiles/Topwear.html'
+      })
+    
 
       big.append(box);
     });
   }
+  document.querySelector('#cat :nth-child(7)').addEventListener('click',function(){
+        window.location.href='../htmlFiles/menShoes.html'
+      })
 
   // Trending JS
   let trend_data = [
@@ -289,6 +305,9 @@ Shop By Department -->
 
       box.append(img);
       box.style.cursor = "pointer";
+      box.addEventListener('click',function(){
+        window.location.href='../htmlFiles/Topwear.html'
+      })
 
       big.append(box);
     });
@@ -313,6 +332,9 @@ Shop By Department -->
 
       box.append(img);
       box.style.cursor = "pointer";
+      box.addEventListener('click',function(){
+        window.location.href='../htmlFiles/Topwear.html'
+      })
 
       big.append(box);
     });
@@ -343,6 +365,9 @@ Shop By Department -->
 
       box.append(img);
       box.style.cursor = "pointer";
+      box.addEventListener('click',function(){
+        window.location.href='../htmlFiles/Topwear.html'
+      })
 
       big.append(box);
     });
@@ -370,6 +395,9 @@ Shop By Department -->
 
       box.append(img);
       box.style.cursor = "pointer";
+      box.addEventListener('click',function(){
+        window.location.href='../htmlFiles/Topwear.html'
+      })
 
       big.append(box);
     });
@@ -400,6 +428,9 @@ Shop By Department -->
 
       box.append(img);
       box.style.cursor = "pointer";
+      box.addEventListener('click',function(){
+        window.location.href='../htmlFiles/Topwear.html'
+      })
 
       big.append(box);
     });
@@ -449,6 +480,9 @@ Shop By Department -->
 
       box.append(img, p);
       box.style.cursor = "pointer";
+      box.addEventListener('click',function(){
+        window.location.href='../htmlFiles/Topwear.html'
+      })
 
       big.append(box);
     });
@@ -480,6 +514,9 @@ Shop By Department -->
 
       box.append(img);
       box.style.cursor = "pointer";
+      box.addEventListener('click',function(){
+        window.location.href='../htmlFiles/Topwear.html'
+      })
 
       big.append(box);
     });
@@ -510,6 +547,9 @@ Shop By Department -->
 
       box.append(img);
       box.style.cursor = "pointer";
+      box.addEventListener('click',function(){
+        window.location.href='../htmlFiles/Topwear.html'
+      })
 
       big.append(box);
     });
@@ -537,6 +577,9 @@ Shop By Department -->
 
       box.append(img);
       box.style.cursor = "pointer";
+      box.addEventListener('click',function(){
+        window.location.href='../htmlFiles/Topwear.html'
+      })
 
       big.append(box);
     });
@@ -582,4 +625,26 @@ Shop By Department -->
  document.querySelector('#dept :nth-child(2)').addEventListener('click',function(){
   window.location.href='kids.html'
  })
+ 
 </script>
+<script type="module">
+  import {upperNavbar,navbar,footer} from '../components/navbar.js'
+
+
+  let upperNav = document.getElementById("top-bar");
+upperNav.innerHTML = upperNavbar();
+
+let nav = document.getElementById('navbar');
+console.log(navbar)
+console.log(nav)
+
+nav.innerHTML = navbar(); 
+
+let foot = document.getElementById('footer')
+
+foot.innerHTML = footer();
+
+console.log(foot)
+
+</script>
+<script type="module" src="../jsFiles/login.js"></script>

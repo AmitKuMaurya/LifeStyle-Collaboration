@@ -5,12 +5,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="bucket.css" />
+    <link rel="stylesheet" href="../CssFiles/bucket.css" />
+
+    <link rel="stylesheet" href="../CssFiles/nav_and_footer.css">
+    <!-- <link rel="stylesheet" href="../CssFiles/login.css">  -->
     <title>Bucket Page</title>
 </head>
 
+
 <body>
     <!-- <h1>Your Shopping Basket</h1> -->
+    <div id="top-bar">
+
+    </div>
+    <div id="navbar">
+
+    </div>
     <div id="upper-floor">
         <p>Your Shopping Basket</p>
         <p id="P-counter">Products</p>
@@ -56,13 +66,41 @@
                 <p>Shipping charges might vary based on pincode delivery location</p>
             </div>
         </div>
+<<<<<<< HEAD:htmlFiles/bucket.html
+    </div>
+
+    <footer id="footer" > 
+
+    </footer>
+=======
     </div>`
+>>>>>>> 03351199723ea46d69d000986b3ab30be237fd38:Bucket_res/bucket.html
 </body>
 
 </html>
 
-<script src="./bucket.js"></script>
+<script src="../jsFiles/bucket.js"></script>
 
+
+<script type="module">
+    import {upperNavbar,navbar,footer} from '../components/navbar.js'
+
+
+let upperNav = document.getElementById("top-bar");
+upperNav.innerHTML = upperNavbar();
+
+let nav = document.getElementById('navbar');
+console.log(navbar)
+console.log(nav)
+
+nav.innerHTML = navbar(); 
+
+let foot = document.getElementById('footer')
+
+foot.innerHTML = footer();
+
+console.log(foot)
+</script>
 <!-- <script>
     // let delArr = JSON.parse(localStorage.getItem("items")) || [];
     let bucketArr = JSON.parse(localStorage.getItem("bucket"));
