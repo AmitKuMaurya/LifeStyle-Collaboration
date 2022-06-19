@@ -9,7 +9,7 @@ let homeDelivery =document.getElementById("home-delivery").addEventListener("cli
 
 function HomeDelivery(){
     
-    window.location.href="index.html";
+    window.location.reload();
     
 }
 
@@ -232,7 +232,7 @@ let UserArray=[]
 
 let more_shop=document.getElementById("more-shop").addEventListener("click",moreShop)
 function moreShop(){
-   window.location.reload()
+   window.location.href="/index.html"
 } 
 }
 

@@ -140,3 +140,15 @@ function SentToConfirm() {
   localStorage.setItem("checkout",JSON.stringify(CheckoutArr));
   window.location.reload();
 }
+
+
+
+// button for checkout 
+
+let checkoutbutton=document.getElementById("cheak-out").addEventListener("click",CheckOutButton)
+
+
+function CheckOutButton(){
+  window.location.href="../payment-vaibhav/html/payment-navbar.html"
+}
+
