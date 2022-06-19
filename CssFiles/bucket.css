@@ -196,7 +196,7 @@ margin-left: 20px;
     align-items: center;
     margin-bottom: 2%;
 }
-a>button{
+#checkout-box>button{
     width: 90%;
     padding: 20px 0px 20px 0px;
     background-color: orange;
