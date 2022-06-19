@@ -327,4 +327,11 @@ total_price.innerText=`₹${subtotal}`
 // let sub=document.getElementById("amt-pay").addEventListener("click",paymentComfirm)
 
 
+// payment logo
 
+let pay_logo_home=document.getElementById("payment-logo").addEventListener("click",HomePeJao)
+
+function HomePeJao(){
+    window.location.href="../../htmlFiles/index.html";
+   window.location.href="/index.html"
+}
