@@ -40,8 +40,24 @@ LifeStylestore is a online shoping website where you can purchase or sell produc
   <img alt="Netlify" src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white"/>
 </div>
 <h2>Responsibilities<h2>
+<h4> Malaya Ranjan </h4>
+  <p> Created a landing page with cool features:-</p>
+      <ul>
+        <li>On hover Navbar</li>
+        <li>Carousel</li>
+        <li>Footer</li>
+      </ul>
+      <img src="LifeStyle-Collaboration\readMdImages\landingpageImage.png"/>
+
+<h4>Anshul Singla</h4>
+ <p> Created a Login/SignUp form it is the sequence of 4 form with taking number , sending otp , checking weather it's correct or not , taking email , user details. </p>
+ <img style="width: 200px;" src="./readMdImages/signup1.png" alt="">
+ <img style="width: 200px;" src="./readMdImages/signup2.png" alt="">
+ <img style="width: 200px;" src="./readMdImages/signup3.png" alt="">
+ <img style="width: 200px;" src="./readMdImages/signup4.png" alt="">
+
 <h4>Vaibhav Ghawale </h4>
- <p> Creating a payment page where user can move to final purchasing stage and connect booking page to all payment getway for more effient way user can easily make a order Also give a life API for finding a stores in located city. Make sure After payment user can see the payment process and All for understanding order is placed or not And all functionalities use us Javascript ES6 concept. </p>
+ <p> Created a payment page where user can move to final purchasing stage and connect booking page to all payment getway for more effient way user can easily make a order Also give a life API for finding a stores in located city. Make sure After payment user can see the payment process and All for understanding order is placed or not And all functionalities use us Javascript ES6 concept. </p>
 
   
 <h1 align="center"> <img style="width: 35px;" src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" alt=""> Thank You <img style="width: 35px;" src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" alt=""> <a href="https://reliable-llama-c038f5.netlify.app/" target="_blank"> </a></h1>
